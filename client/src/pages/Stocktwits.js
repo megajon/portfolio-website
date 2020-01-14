@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stocktwits = () => {
     return (
-        <h1>Stocktwits page with Redux store and updated deps.</h1>
+        <h1>Moved files from server/src</h1>
     )
 }
 
