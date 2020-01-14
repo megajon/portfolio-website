@@ -19,7 +19,7 @@ const Landing = () => {
     return (
         <>
             <div id="invisible-header"></div>
-            <div id="navbar">
+            <div id="main-navbar">
                 <ul>
                     <li><button id="profile-button" onClick={scrollToProfile}><i class="fas fa-user fa-10x icon" ></i></button></li>
                     <li><button id="work-button" onClick={scrollToWork}><i class="fas fa-briefcase fa-10x icon"></i></button></li>
