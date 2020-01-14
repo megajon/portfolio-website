@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Landing from './components/Landing';
+import Landing from './pages/Landing';
 import Stocktwits from './pages/Stocktwits'
 import './App.css'
 

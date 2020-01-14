@@ -31,6 +31,7 @@ const Landing = () => {
             </div>
             <div id="red" className="section">
                 <h1 id="red-content" className="section-content">Red Section</h1>
+                <a href="/stocktwits">Stocktwits</a>
             </div>
             <div id="section1-break" className="section-break"></div>
             <div id="green" className="section">
