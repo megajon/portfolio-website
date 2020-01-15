@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addSymbols } from '../actions/index';
+import { addSymbols } from '../../actions/index';
 
 
 

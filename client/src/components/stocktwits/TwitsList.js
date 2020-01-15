@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getTwits } from '../../actions/searchActions';
-import { deleteSymbol } from '../../actions/searchActions';
+import { getTwits } from '../../actions/index';
+import { deleteSymbol } from '../../actions/index';
 
 class TwitsList extends Component {
     constructor(props) {

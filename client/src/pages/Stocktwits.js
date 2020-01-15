@@ -1,8 +1,13 @@
 import React from 'react';
+import TwitsList from '../components/stocktwits/TwitsList';
+import SearchForm from '../components/stocktwits/SearchForm';
 
 const Stocktwits = () => {
     return (
-        <h1>Added backend logic to server/index.js</h1>
+        <>
+            <SearchForm />
+            <TwitsList />
+        </>
     )
 }
 
