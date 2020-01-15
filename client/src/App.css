@@ -3,6 +3,8 @@
   }
 
 
+@media screen and (max-width: 1000px) {
+
   .container {
     width: 100%;
   }
@@ -102,7 +104,7 @@
 
   
   /* stocktwits page */
-  /* .twit-button {
+  .twit-button {
     width: 100%;
     padding: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -278,4 +280,73 @@
   .comment {
     border-bottom: 2px solid black;
     padding: 16px;
-  } */
+  }
+
+}
+
+
+@media screen and (min-width: 1001px) {
+    body {
+        max-width: 60em;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    div#main-navbar {
+        position: fixed;
+        top: 0.4em;
+        right: 25em;
+    }
+
+    div#main-navbar ul li {
+        list-style: none;
+        margin-bottom: 2em;
+    }
+
+    div#main-navbar ul li i {
+        font-size: 4em;
+    }
+
+    /* splash page */
+  
+    .section {
+        height: 98em;
+    }
+    
+    /* #first {
+        top: 0;
+        
+        height: 5em;
+    } */
+    
+    #red {
+        background-color: red;
+    }
+    
+    /* .section-break {
+        height: 10em;
+    } */
+    
+    #green {
+        background-color: green;
+    }
+    
+    #blue {
+        background-color: blue;
+    }
+    
+    /* #section3-break {
+        height: 40em;
+    } */
+
+
+}
+
