@@ -31,8 +31,8 @@ const Landing = () => {
             </div>
             <div id="title-page" className="section">
                 <div id="title" className="title">
-                    <h1>Jonathan C. Seubert</h1>
-                    <h1>Creative Technologist</h1>
+                    <p>Jonathan C. Seubert</p><br></br>
+                    <p>Creative Technologist</p>
                 </div>
                 <div id="link-to-profile">
                     <a href="#" onClick={scrollToWork}><i class="fas fa-chevron-circle-down next-section"></i></a>
