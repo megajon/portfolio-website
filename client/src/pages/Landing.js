@@ -14,7 +14,7 @@ const Landing = () => {
 
     const scrollToInfo = (e) => {
         e.preventDefault();
-        document.querySelector('#section2-break').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#section3-break').scrollIntoView({ behavior: 'smooth' });
     }
     return (
         <>
@@ -41,6 +41,10 @@ const Landing = () => {
             <div id="section2-break" className="section-break"></div>
             <div id="blue" className="section">
                 <div id="blue-content"><h1 className="section-content">Blue Section</h1></div>
+            </div>
+            <div id="section3-break" className="section-break"></div>
+            <div id="yellow" className="section">
+                <div id="yellow-content"><h1 className="section-content">Yellow Section</h1></div>
             </div>
         </>
     )

@@ -57,7 +57,7 @@
   /* splash page */
   
   .section {
-    height: 98em;
+    height: 29em;
   }
   
   
@@ -94,10 +94,14 @@
     width: 100%;
     background-color: blue;
   }
-  
-  #section3-break {
-    height: 40em;
+
+  #yellow {
+    background-color: yellow;
   }
+  
+  /* #section3-break {
+    height: 40em;
+  } */
   
   
   
@@ -349,7 +353,7 @@
     /* splash page */
   
     .section {
-        height: 98em;
+        height: 54em;
     }
     
     /* #first {
@@ -378,6 +382,10 @@
     
     #blue {
         background-color: blue;
+    }
+
+    #yellow {
+        background-color: yellow;
     }
     
     /* #section3-break {
