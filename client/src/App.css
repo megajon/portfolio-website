@@ -8,6 +8,10 @@
   .container {
     width: 100%;
   }
+
+  a {
+      text-decoration: none;
+  }
   
   
   /* main navbar */
@@ -76,9 +80,33 @@
     height: 5em;
   }
   
-  #red {
+  #title-page {
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    border: 1px solid black;
+  }
+
+  #title {
+
+  }
+
+  #link-to-profile {
+      position: relative;
+      text-align: center;
+      top: 16em;
+  }
+
+  #link-to-profile a {
+    
+  }
+
+  #link-to-profile a i {
+    background-color: white;
+    color: black;
+  }
+
+  .next-section {
+    font-size: 4em;
   }
   
   .section-break {
@@ -96,12 +124,13 @@
   }
 
   #yellow {
+    width: 100%;
     background-color: yellow;
   }
   
-  /* #section3-break {
-    height: 40em;
-  } */
+  #section4-break {
+    height: 10em;
+  }
   
   
   
@@ -295,7 +324,9 @@
         margin: 0 auto;
     }
 
-
+    a {
+        text-decoration: none;
+    }
 
     h1 {
         margin: 0;
@@ -368,8 +399,18 @@
         height: 5em;
     }
     
-    #red {
-        background-color: red;
+    #title-page {
+        border: 1px solid black;
+    }
+
+    #title {
+        
+    }
+
+    #link-to-profile {
+        position: relative;
+        text-align: center;
+
     }
     
     .section-break {

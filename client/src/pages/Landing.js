@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom';
 const Landing = () => {
     const scrollToProfile = (e) => {
         e.preventDefault();
-        document.querySelector('#invisible-header').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#section1-break').scrollIntoView({ behavior: 'smooth' });
     }
 
     const scrollToWork = (e) => {
         e.preventDefault();
-        document.querySelector('#section1-break').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#section2-break').scrollIntoView({ behavior: 'smooth' });
     }
 
     const scrollToInfo = (e) => {
@@ -29,9 +29,14 @@ const Landing = () => {
             <div id="first">
                 <h1 id="first-section"></h1>
             </div>
-            <div id="red" className="section">
-                <h1 id="red-content" className="section-content">Red Section</h1>
-                <a href="/stocktwits">Stocktwits</a>
+            <div id="title-page" className="section">
+                <div id="title" className="title">
+                    <h1>Jonathan C. Seubert</h1>
+                    <h1>Creative Technologist</h1>
+                </div>
+                <div id="link-to-profile">
+                    <a href="#" onClick={scrollToWork}><i class="fas fa-chevron-circle-down next-section"></i></a>
+                </div>
             </div>
             <div id="section1-break" className="section-break"></div>
             <div id="green" className="section">
@@ -46,6 +51,7 @@ const Landing = () => {
             <div id="yellow" className="section">
                 <div id="yellow-content"><h1 className="section-content">Yellow Section</h1></div>
             </div>
+            <div id="section4-break" className="section-break"></div>
         </>
     )
 
