@@ -22,6 +22,7 @@ class Landing extends Component {
                 slides[i].style.display = "none";
             }
             slides[this.state.slideIndex].style.display = "block";
+            slides[this.state.slideIndex].style.background = "silver";
         }
         renderSlides();
     }
@@ -128,7 +129,7 @@ class Landing extends Component {
                             </div>   
                         
                         
-                            <div className="panel">
+                            <div id="green-panel" className="panel">
                                 <div className="panel-content">
                                     <p>two</p>
                                 </div>
@@ -136,7 +137,7 @@ class Landing extends Component {
                             </div>
                         
                         
-                            <div className="panel">
+                            <div id="blue-panel" className="panel">
                                 <div className="panel-content">
                                     <p>three</p>
                                 </div>
