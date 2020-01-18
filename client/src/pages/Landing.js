@@ -18,6 +18,9 @@ class Landing extends Component {
     componentWillMount() {
         const renderSlides = async () => {
             let slides = await document.getElementsByClassName("panel");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
             slides[this.state.slideIndex].style.display = "block";
         }
         renderSlides();
