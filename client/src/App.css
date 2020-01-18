@@ -176,7 +176,7 @@
     .panel-content {
       position: relative;
       top: 0.1em;
-      height: 13em;
+      height: 9em;
       text-align: center;
     }
 
@@ -202,7 +202,7 @@
 
     .prev, .next {
       color: black;
-      bottom: 7.5em;
+      bottom: 5.5em;
       /* cursor: pointer;
       position: absolute;
       top: 50%;
