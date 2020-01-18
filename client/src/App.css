@@ -4,7 +4,7 @@
   }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
 
   /* body {
     width: 100%;
@@ -147,11 +147,10 @@
       font-size: 5em;
   }
 
-    .appSlides {
+    /* .appSlides {
         display: none;
-        /* position: relative;
-        top: 15%; */
-    }
+        height: 30em;
+    } */
 
     .appSlides-container {
         position: relative;
@@ -166,8 +165,8 @@
 
     .panel {
         position: relative;
-        /* width: 50em;
-        height: 30em; */
+        /* width: 50em; */
+        height: 30%;
         margin: auto;
         background-color: black;
         
@@ -176,7 +175,7 @@
     .panel-content {
       position: relative;
       top: 0.1em;
-      height: 9em;
+      height: 30%;
       text-align: center;
     }
 
@@ -202,7 +201,8 @@
 
     .prev, .next {
       color: black;
-      bottom: 5.5em;
+      top: 1em;
+      /* bottom: 2em; */
       /* cursor: pointer;
       position: absolute;
       top: 50%;
@@ -220,21 +220,23 @@
     #prev {
       position: relative;
       /* bottom: 10em; */
-      left: -2.1em;
+      /* left: -2.1em; */
     }
 
     #next {
       position: relative;
       /* bottom: 10em; */
-      left: 13.8em;
+      /* left: 10em; */
+      float: right;
+      color: red;
     }
 
-    #prev i {
-      font-size: 2em;
+    #prev i, #prev i {
+      font-size: 4em;
     }
 
     #next i {
-      font-size: 2em;
+      font-size: 4em;
     }
 
     /* #prev, #next {
@@ -263,7 +265,8 @@
     .next-icon {
       position: relative;
       text-align: center;
-      top: 15.1em;
+      margin-top: 4em;
+      /* top: 15.1em; */
     }
 
     #app-section-next i {
@@ -469,7 +472,7 @@
 }
 
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 701px) {
     body {
         max-width: 60em;
         margin: 0 auto;

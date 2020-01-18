@@ -17,7 +17,7 @@ class Landing extends Component {
 
     componentWillMount() {
         const renderSlides = async () => {
-            let slides = await document.getElementsByClassName("appSlides");
+            let slides = await document.getElementsByClassName("panel");
             slides[this.state.slideIndex].style.display = "block";
         }
         renderSlides();
@@ -48,7 +48,7 @@ class Landing extends Component {
     showSlides = async (n) =>  {
         
         let i;
-        let slides = await document.getElementsByClassName("appSlides");
+        let slides = await document.getElementsByClassName("panel");
         // console.log(slides.length);
         let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {await this.setState({slideIndex: 1})}
@@ -113,8 +113,8 @@ class Landing extends Component {
                 <div id="section2-break" className="section-break"></div>
                 <div id="blue" className="section">
                     <div class="section-title"><h1>Apps</h1></div>
-                    <div className="appSlides-container">
-                        <div className="appSlides fade">                       
+                    {/* <div className="appSlides-container"> */}
+                                               
                             <div id="stocktwits-panel" className="panel">
                                 <a href="/stocktwits">
                                     <div className="panel-content">
@@ -123,26 +123,26 @@ class Landing extends Component {
                                     </div>
                                 </a>
                             </div>   
-                        </div>
-                        <div className="appSlides fade">
+                        
+                        
                             <div className="panel">
                                 <div className="panel-content">
                                     <p>two</p>
                                 </div>
                                 <div className="panel-title">Panel Title</div>
                             </div>
-                        </div>
-                        <div className="appSlides fade">
+                        
+                        
                             <div className="panel">
                                 <div className="panel-content">
                                     <p>three</p>
                                 </div>
                                 <div className="panel-title">Panel Title</div>
                             </div>
-                        </div>
+                        
                         <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i class="fas fa-step-backward"></i></a>
                         <a href="#" id="next" className="next" onClick={this.slideForward}><i class="fas fa-step-forward"></i></a>
-                    </div>
+                    {/* </div> */}
                     <center>
                     <div class="next-icon">
                         <button id="app-section-next" onClick={this.scrollToInfo}><i class="fas fa-chevron-down"></i></button>
