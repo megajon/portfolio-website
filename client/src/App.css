@@ -144,7 +144,7 @@
 
   .section-title h1 {
       /* margin: 0, 0, 2em, 0; */
-      font-size: 4em;
+      font-size: 3em;
   }
 
     /* .appSlides {
@@ -166,7 +166,7 @@
     .panel {
         position: relative;
         /* width: 50em; */
-        height: 30%;
+        height: 37%;
         margin: auto;
         background-color: black;
         
