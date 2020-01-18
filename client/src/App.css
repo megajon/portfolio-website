@@ -1,13 +1,18 @@
   html {
+    /* width: 100%; */
     overflow-y: scroll;
   }
 
 
 @media screen and (max-width: 1000px) {
 
-  .container {
+  /* body {
     width: 100%;
   }
+
+  .container {
+    width: 100%;
+  } */
 
   p {
       margin: 0;
@@ -18,7 +23,9 @@
   }
   
   
-  /* main navbar */
+  /* main navbar mobile */
+
+
   div#invisible-header {
     position: absolute;
     top: 0;
@@ -35,6 +42,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
   }
   
   #main-navbar ul {
@@ -65,7 +73,7 @@
   /* splash page */
   
   .section {
-    height: 25em;
+    /* height: 25em; */
   }
   
   
@@ -97,7 +105,7 @@
   #link-to-profile {
       position: relative;
       text-align: center;
-      top: 16em;
+      top: 2em;
   }
 
   #link-to-profile a {
@@ -123,13 +131,152 @@
   }
   
   #blue {
-    width: 100%;
-    background-color: blue;
+    /* width: 100%; */
+    /* background-color: blue; */
+    height: 30em;
   }
 
+  .section-title {
+    text-align: center;
+    margin-bottom: 2em;
+      
+  }
+
+  .section-title h1 {
+      margin: 0, 0, 2em, 0;
+      font-size: 5em;
+  }
+
+    .appSlides {
+        display: none;
+        /* position: relative;
+        top: 15%; */
+    }
+
+    .appSlides-container {
+        position: relative;
+        top: .1em;
+        /* width: 100%; */
+        width: 80%;
+        height: 3em;
+        /* background-color: red; */
+        /* top: 20%; */
+        margin: auto;
+    }
+
+    .panel {
+        position: relative;
+        /* width: 50em;
+        height: 30em; */
+        margin: auto;
+        background-color: black;
+        
+    }
+
+    .panel-content {
+      position: relative;
+      top: 0.1em;
+      height: 13em;
+      text-align: center;
+    }
+
+    .stocktwits-content {
+      margin: 0;
+      text-align: center;
+      color: white;
+    }
+
+    #stocktwits-logo {
+      margin-bottom: .2em;
+      font-size: 3em;
+    }
+
+    #stocktwits-title {
+      font-size: 2em;
+    }
+
+    /* .panel-content {
+      position: relative;
+      margin: auto;
+    } */
+
+    .prev, .next {
+      color: black;
+      bottom: 7.5em;
+      /* cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none; */
+    }
+    
+    #prev {
+      position: relative;
+      /* bottom: 10em; */
+      left: -2.1em;
+    }
+
+    #next {
+      position: relative;
+      /* bottom: 10em; */
+      left: 13.8em;
+    }
+
+    #prev i {
+      font-size: 2em;
+    }
+
+    #next i {
+      font-size: 2em;
+    }
+
+    /* #prev, #next {
+      font-size: 1em;
+    } */
+
+    #dots {
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: blue;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    .next-icon {
+      position: relative;
+      text-align: center;
+      top: 15.1em;
+    }
+
+    #app-section-next i {
+        font-size: 5em;
+        color: black;
+        background-color: transparent;
+        border-radius: 50%;
+        border: none;
+    }
+
   #yellow {
-    width: 100%;
-    background-color: yellow;
+    /* width: 100%;
+    background-color: yellow; */
   }
   
   #section4-break {
@@ -389,7 +536,7 @@
     /* splash page */
   
     .section {
-        height: 54em;
+        /* height: 54em; */
     }
     
     /* #first {
@@ -427,7 +574,18 @@
     }
     
     #blue {
-        background-color: blue;
+        /* background-color: blue; */
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2em;
+      
+    }
+
+    .section-title h1 {
+      margin: 0, 0, 2em, 0;
+      font-size: 6em;
     }
 
     .appSlides {
@@ -440,7 +598,7 @@
         position: relative;
         width: 100%;
         height: 30em;
-        background-color: red;
+        /* background-color: red; */
         top: 20%;
         /* margin: auto; */
     }
@@ -448,11 +606,76 @@
     .panel {
         position: relative;
         width: 50em;
-        height: 20em;
+        height: 30em;
         margin: auto;
-        background-color: white;
+        background-color: black;
         
     }
+
+    .panel-content {
+      position: relative;
+      top: 0.1em;
+    }
+
+    .stocktwits-content {
+      margin: 0;
+      text-align: center;
+      color: white;
+    }
+
+    #stocktwits-logo {
+      margin-bottom: .2em;
+      font-size: 15em;
+    }
+
+    #stocktwits-title {
+      font-size: 6em;
+    }
+
+    /* .panel-content {
+      position: relative;
+      margin: auto;
+    } */
+
+    .prev, .next {
+      color: black;
+      /* cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none; */
+    }
+    
+    #prev {
+      position: relative;
+      bottom: 17em;
+      left: 0em;
+    }
+
+    #next {
+      position: relative;
+      bottom: 17em;
+      left: 53.1em;
+    }
+
+    #prev i {
+      font-size: 4em;
+    }
+
+    #next i {
+      font-size: 4em;
+    }
+
+    /* #prev, #next {
+      font-size: 1em;
+    } */
 
     #dots {
         text-align: center;
@@ -471,6 +694,18 @@
 
     .active {
         background-color: #717171;
+    }
+
+    #next-icon {
+      text-align: center;
+    }
+
+    #app-section-next i {
+        font-size: 10em;
+        color: black;
+        /* background-color: black; */
+        border-radius: 50%;
+        border: none;
     }
 
     #yellow {

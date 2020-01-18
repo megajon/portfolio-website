@@ -5,7 +5,7 @@ class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            slideIndex: 1
+            slideIndex: 0
         }
         this.scrollToProfile = this.scrollToProfile.bind(this);
         this.scrollToWork = this.scrollToWork.bind(this);
@@ -112,14 +112,17 @@ class Landing extends Component {
                 </div>
                 <div id="section2-break" className="section-break"></div>
                 <div id="blue" className="section">
+                    <div class="section-title"><h1>Apps</h1></div>
                     <div className="appSlides-container">
-                        <div className="appSlides fade">
-                            <div className="panel">
-                                <div className="panel-content">
-                                    <p>one</p>
-                                </div>
-                                <div className="panel-title">Panel Title</div>
-                            </div>
+                        <div className="appSlides fade">                       
+                            <div id="stocktwits-panel" className="panel">
+                                <a href="/stocktwits">
+                                    <div className="panel-content">
+                                        <p id="stocktwits-logo" class="stocktwits-content">$</p>
+                                        <p id="stocktwits-title" class="stocktwits-content">Search Stocktwits</p>
+                                    </div>
+                                </a>
+                            </div>   
                         </div>
                         <div className="appSlides fade">
                             <div className="panel">
@@ -137,14 +140,14 @@ class Landing extends Component {
                                 <div className="panel-title">Panel Title</div>
                             </div>
                         </div>
-                        <a href="#" id="prev" className="prev" onClick={this.slideBackward}>&#10094;</a>
-                        <a href="#" id="next" className="next" onClick={this.slideForward}>&#10095;</a>
+                        <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i class="fas fa-step-backward"></i></a>
+                        <a href="#" id="next" className="next" onClick={this.slideForward}><i class="fas fa-step-forward"></i></a>
                     </div>
-                    {/* <div>
-                        <span className="dot" onClick={currentSlide(1)}></span> 
-                        <span className="dot" onClick={currentSlide(2)}></span> 
-                        <span className="dot" onClick={currentSlide(3)}></span> 
-                    </div> */}
+                    <center>
+                    <div class="next-icon">
+                        <button id="app-section-next" onClick={this.scrollToInfo}><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    </center>
                 </div>
                 <div id="section3-break" className="section-break"></div>
                 <div id="yellow" className="section">
@@ -158,3 +161,9 @@ class Landing extends Component {
 }
 
 export default Landing;
+
+{/* <div>
+                        <span className="dot" onClick={currentSlide(1)}></span> 
+                        <span className="dot" onClick={currentSlide(2)}></span> 
+                        <span className="dot" onClick={currentSlide(3)}></span> 
+                    </div> */}
