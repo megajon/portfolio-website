@@ -169,7 +169,7 @@
         height: 37%;
         margin: auto;
         background-color: black;
-        
+        border-radius: 4%;
     }
 
     .panel-content {
@@ -178,6 +178,8 @@
       height: 30%;
       text-align: center;
     }
+
+    #panel-controls {}
 
     .stocktwits-content {
       margin: 0;
@@ -220,15 +222,12 @@
     #prev {
       position: relative;
       /* bottom: 10em; */
-      /* left: -2.1em; */
+      right: 2.5em;
     }
 
     #next {
       position: relative;
-      /* bottom: 10em; */
-      /* left: 10em; */
-      float: right;
-      color: red;
+      left: 2.5em;
     }
 
     #prev i, #prev i {

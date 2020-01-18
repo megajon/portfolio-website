@@ -53,15 +53,15 @@ class Landing extends Component {
         let i;
         let slides = await document.getElementsByClassName("panel");
         // console.log(slides.length);
-        let dots = document.getElementsByClassName("dot");
+        // let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {await this.setState({slideIndex: 1})}
         if (n < 1) {this.setState({slideIndex: slides.length})}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "none");
-        }
+        // for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "none");
+        // }
 
         slides[this.state.slideIndex - 1].style.display = "block";
     }
@@ -115,14 +115,14 @@ class Landing extends Component {
                 </div>
                 <div id="section2-break" className="section-break"></div>
                 <div id="blue" className="section">
-                    <div class="section-title"><h1>Apps</h1></div>
+                    <div className="section-title"><h1>Apps</h1></div>
                     {/* <div className="appSlides-container"> */}
                                                
                             <div id="stocktwits-panel" className="panel">
                                 <a href="/stocktwits">
                                     <div className="panel-content">
-                                        <p id="stocktwits-logo" class="stocktwits-content">$</p>
-                                        <p id="stocktwits-title" class="stocktwits-content">Search Stocktwits</p>
+                                        <p id="stocktwits-logo" className="stocktwits-content">$</p>
+                                        <p id="stocktwits-title" className="stocktwits-content">Search Stocktwits</p>
                                     </div>
                                 </a>
                             </div>   
@@ -142,13 +142,16 @@ class Landing extends Component {
                                 </div>
                                 <div className="panel-title">Panel Title</div>
                             </div>
-                        
-                        <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i class="fas fa-step-backward"></i></a>
-                        <a href="#" id="next" className="next" onClick={this.slideForward}><i class="fas fa-step-forward"></i></a>
+                        <div id="panel-controls">
+                            <center>
+                            <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i className="fas fa-step-backward"></i></a>
+                            <a href="#" id="next" className="next" onClick={this.slideForward}><i className="fas fa-step-forward"></i></a>
+                            </center>
+                        </div>
                     {/* </div> */}
                     <center>
-                    <div class="next-icon">
-                        <button id="app-section-next" onClick={this.scrollToInfo}><i class="fas fa-chevron-down"></i></button>
+                    <div className="next-icon">
+                        <button id="app-section-next" onClick={this.scrollToInfo}><i className="fas fa-chevron-down"></i></button>
                     </div>
                     </center>
                 </div>
