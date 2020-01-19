@@ -27,6 +27,7 @@ class TwitsList extends Component {
         document.getElementById("twits").classList.toggle("show");
     }
     render() {
+        console.log(this.props.search)
         const symbolList = this.props.search.map(symbol => (
             <div key={symbol._id}>
                 <h3>{symbol.twits.length} {symbol.symbol} Twits</h3>

@@ -306,8 +306,10 @@
   }
 
   #info-section {
+    position: relative;
     width: 100%;
-    height: 40em;
+    height: 25em;
+    top: 5em;
   }
 
   #social-media-links1 a {
@@ -320,28 +322,32 @@
   #social-media-links2 {
     display: inline-block;
     position: relative;
-    height: 1em;
-    background-color: orange;
-    margin: 0 auto;
-    width: 80%;
+    top: 1em;
+    width: 100%;
     /* background-color: transparent; */
   }
 
   #social-media-links2 a {
     float: left;
-    width: 40%;
+    width:50%;
     text-align: center;
     font-size: 2.5em;
   }
 
   #mail-icon {
-    position: relative;
+    
   }
 
   #cv-icon {
-    position: relative;
+    /* position: relative; */
+    
   }
 
+  #copyright {
+    position: relative;
+    text-align: center;
+    top: 10em;
+  }
 
   
   
