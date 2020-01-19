@@ -42,7 +42,7 @@ class Landing extends Component {
 
     scrollToInfo = (e) => {
         e.preventDefault();
-        document.querySelector('#section3-break').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#section4-break').scrollIntoView({ behavior: 'smooth' });
     }
 
     
