@@ -298,6 +298,51 @@
   #section4-break {
     height: 5em;
   }
+
+  #social-media-links1 {
+    width: 100%;
+    background-color: transparent;
+    /* overflow: auto; */
+  }
+
+  #info-section {
+    width: 100%;
+    height: 40em;
+  }
+
+  #social-media-links1 a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #social-media-links2 {
+    display: inline-block;
+    position: relative;
+    height: 1em;
+    background-color: orange;
+    margin: 0 auto;
+    width: 80%;
+    /* background-color: transparent; */
+  }
+
+  #social-media-links2 a {
+    float: left;
+    width: 40%;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  #mail-icon {
+    position: relative;
+  }
+
+  #cv-icon {
+    position: relative;
+  }
+
+
   
   
   
