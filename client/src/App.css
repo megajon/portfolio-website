@@ -4,6 +4,8 @@
   }
 
 
+
+
 @media screen and (max-width: 700px) {
 
   /* body {
@@ -434,52 +436,16 @@
   }
   
   .show {display:block;}
-  
-  .article-list-item {
-    text-decoration: none;
-    color: black;
-    padding: 16px 0 0 0;
-  }
-  
-  .article-list-item p {
-    padding-bottom: 32px;
-    border-bottom: 2px solid black;
-  }
-  
-  #add-comment-form {
-    border-bottom: 2px solid black;
-    padding: 16px;
-  }
-  
-  #add-comment-form h3 {
-    margin-bottom: 16px;
-  }
-  
-  #add-comment-form input, textarea {
-    display: block;
-    width: 300px;
-    padding: 8px;
-    border-radius: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    border: 2px solid black;
-    margin-bottom: 16px;
-  }
-  
-  #add-comment-form button {
-    width: 320px;
-  }
-  
-  #upvotes-section button, p {
-    display: inline-block;
-    margin-right: 16px;
-  }
-  
-  .comment {
-    border-bottom: 2px solid black;
-    padding: 16px;
-  }
 
+}
+
+
+/* Mobile devices with higher height dimension */
+
+@media screen and (min-height: 600px) {
+  /* #blue {
+    height: 50em;
+  } */
 }
 
 
@@ -589,6 +555,7 @@
     
     #blue {
         /* background-color: blue; */
+        /* height: 60em; */
     }
 
     .section-title {
@@ -599,28 +566,14 @@
 
     .section-title h1 {
       margin: 0, 0, 2em, 0;
-      font-size: 6em;
+      font-size: 2.5em;
     }
 
-    .appSlides {
-        display: none;
-        /* position: relative;
-        top: 15%; */
-    }
-
-    .appSlides-container {
-        position: relative;
-        width: 100%;
-        height: 30em;
-        /* background-color: red; */
-        top: 20%;
-        /* margin: auto; */
-    }
 
     .panel {
         position: relative;
-        width: 50em;
-        height: 30em;
+        width: 24em;
+        height: 12em;
         margin: auto;
         background-color: black;
         
@@ -639,11 +592,11 @@
 
     #stocktwits-logo {
       margin-bottom: .2em;
-      font-size: 15em;
+      font-size: 5em;
     }
 
     #stocktwits-title {
-      font-size: 6em;
+      font-size: 4em;
     }
 
     /* .panel-content {
@@ -653,6 +606,7 @@
 
     .prev, .next {
       color: black;
+      top: 2em;
       /* cursor: pointer;
       position: absolute;
       top: 50%;
@@ -669,14 +623,15 @@
     
     #prev {
       position: relative;
-      bottom: 17em;
-      left: 0em;
+      /* bottom: 17em; */
+      right: 5em;
     }
 
     #next {
       position: relative;
-      bottom: 17em;
-      left: 53.1em;
+      left: 5em;
+      /* bottom: 17em; */
+      /* left: 53.1em; */
     }
 
     #prev i {
@@ -685,6 +640,10 @@
 
     #next i {
       font-size: 4em;
+    }
+
+    #apps-next, #projects-next {
+      display: none;
     }
 
     /* #prev, #next {
@@ -722,8 +681,8 @@
         border: none;
     }
 
-    #yellow {
-        background-color: yellow;
+    #info-section {
+      height: 40em;
     }
     
     /* #section3-break {

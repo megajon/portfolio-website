@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom';
+import ProjectSecton from '../components/ProjectSection'
+import InfoSection from '../components/InfoSection';
 
 class Landing extends Component {
     constructor(props) {
@@ -17,7 +19,7 @@ class Landing extends Component {
 
     componentWillMount() {
         const renderSlides = async () => {
-            let slides = await document.getElementsByClassName("panel");
+            let slides = await document.getElementsByClassName("app-panel");
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
@@ -52,7 +54,7 @@ class Landing extends Component {
     showSlides = async (n) =>  {
         
         let i;
-        let slides = await document.getElementsByClassName("panel");
+        let slides = await document.getElementsByClassName("app-panel");
         // console.log(slides.length);
         // let dots = document.getElementsByClassName("dot");
         if (n > slides.length) {await this.setState({slideIndex: 1})}
@@ -116,10 +118,9 @@ class Landing extends Component {
                 </div>
                 <div id="section2-break" className="section-break"></div>
                 <div id="blue" className="section">
-                    <div className="section-title"><h1>Apps</h1></div>
-                    {/* <div className="appSlides-container"> */}
+                    <div className="section-title"><h1>apps</h1></div>
                                                
-                            <div id="stocktwits-panel" className="panel">
+                            <div id="stocktwits-panel" className="app-panel panel">
                                 <a href="/stocktwits">
                                     <div className="panel-content">
                                         <p id="stocktwits-logo" className="stocktwits-content">$</p>
@@ -129,7 +130,7 @@ class Landing extends Component {
                             </div>   
                         
                         
-                            <div id="green-panel" className="panel">
+                            <div id="green-panel" className="app-panel panel">
                                 <div className="panel-content">
                                     <p>two</p>
                                 </div>
@@ -137,7 +138,7 @@ class Landing extends Component {
                             </div>
                         
                         
-                            <div id="blue-panel" className="panel">
+                            <div id="blue-panel" className="app-panel panel">
                                 <div className="panel-content">
                                     <p>three</p>
                                 </div>
@@ -149,18 +150,18 @@ class Landing extends Component {
                             <a href="#" id="next" className="next" onClick={this.slideForward}><i className="fas fa-step-forward"></i></a>
                             </center>
                         </div>
-                    {/* </div> */}
                     <center>
-                    <div className="next-icon">
+                    <div id="apps-next" className="next-icon">
                         <button id="app-section-next" onClick={this.scrollToInfo}><i className="fas fa-chevron-down"></i></button>
                     </div>
                     </center>
                 </div>
                 <div id="section3-break" className="section-break"></div>
                 <div id="yellow" className="section">
-                    <div id="yellow-content"><h1 className="section-content">Yellow Section</h1></div>
+                    <ProjectSecton />
                 </div>
                 <div id="section4-break" className="section-break"></div>
+                <InfoSection />
             </>
         )
     }
