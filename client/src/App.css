@@ -114,6 +114,12 @@ body {
     text-align: center;
   }
 
+  .page-content {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+  }
+
   .question-modal {
     position: relative;
     left: 4em;
@@ -124,6 +130,11 @@ body {
     background-color: black;
     border-radius: 50%;
     font-size: 1em;
+  }
+
+  #omega-man-image {
+    width: 100%;
+    border: none;
   }
   
   #first {
