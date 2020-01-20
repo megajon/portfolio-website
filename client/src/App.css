@@ -87,13 +87,43 @@ body {
   }
 
   .back-button {
-    color: white;
+    /* color: white;
     background-color: black;
-    font-size: 2em;
+    font-size: 3em; */
   }
   
   .icon {
     color: black;
+  }
+
+  .header-items li {
+    display: inline-block;
+  }
+
+  #header-title {
+    
+  }
+
+  .header-back-button {
+    position: relative;
+    right: 3em;
+  }
+
+  .page-title h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .question-modal {
+    position: relative;
+    left: 4em;
+  }
+
+  .modal-button {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    font-size: 1em;
   }
   
   #first {
@@ -363,6 +393,13 @@ body {
 
   
   /* stocktwits page */
+
+  #stocktwits-header {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+
   .twit-button {
     width: 100%;
     padding: 16px;
