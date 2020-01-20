@@ -41,10 +41,9 @@ class SearchForm extends Component {
         <>
         <div className="search-box">
             <div className="search-form">
-                <a href="/" className="back-button">back</a>
-                <form onSubmit={this.onSubmit}>
-                    <input type="text" name="searchQuery" onChange={this.onChange} value={this.state.searchQuery} />
-                    <button type="submit">Search</button>
+                <form id="stocktwits-search-form" onSubmit={this.onSubmit}>
+                    <input type="text" id="stocktwits-search-field" name="searchQuery" onChange={this.onChange} value={this.state.searchQuery} />
+                    <button type="submit" id="stocktwits-search-button"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </div>
