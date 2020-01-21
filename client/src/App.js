@@ -6,6 +6,7 @@ import OmegaMan from './pages/OmegaMan';
 import JohnBrown from './pages/JohnBrown';
 import TheEnforcer from './pages/TheEnforcer';
 import Cine1 from './pages/Cine1';
+import LightingTest from './pages/LightingTest';
 import './App.css'
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/johnbrown" component={JohnBrown} />
           <Route path="/enforcer" component={TheEnforcer} />
           <Route path="/cine1" component={Cine1} />
+          <Route path="/lightingtest" component={LightingTest} />
         </div>
       </BrowserRouter>
     </div>
