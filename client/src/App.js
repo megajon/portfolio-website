@@ -4,6 +4,7 @@ import Landing from './pages/Landing';
 import Stocktwits from './pages/Stocktwits';
 import OmegaMan from './pages/OmegaMan';
 import JohnBrown from './pages/JohnBrown';
+import TheEnforcer from './pages/TheEnforcer';
 import './App.css'
 
 
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/stocktwits" component={Stocktwits} />
           <Route path="/omegaman" component={OmegaMan} />
           <Route path="/johnbrown" component={JohnBrown} />
+          <Route path="/enforcer" component={TheEnforcer} />
         </div>
       </BrowserRouter>
     </div>
