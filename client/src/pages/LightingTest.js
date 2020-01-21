@@ -19,7 +19,7 @@ class LightingTest extends Component {
                 </div>
                 <div className="page-content">
                     <p>
-                    JThis is a lighting test that I did for a Post Production class I took
+                    This is a lighting test that I did for a Post Production class I took
                     in film school. The idea is to film the same subject at the same angle
                     with both 16mm film and digital video. The subject is filmed at various
                     f-stops with both cameras for the purpose of seeing how the exposure of

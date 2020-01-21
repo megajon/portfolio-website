@@ -32,7 +32,7 @@ class Landing extends Component {
 
     scrollToProfile = (e) => {
         e.preventDefault();
-        document.querySelector('#section1-break').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#first').scrollIntoView({ behavior: 'smooth' });
     }
 
     scrollToWork = (e) => {
@@ -102,19 +102,25 @@ class Landing extends Component {
                 <div id="first">
                     <h1 id="first-section"></h1>
                 </div>
-                <div id="title-page" className="section">
-                    <div id="title" className="title">
-                        <p>Jonathan C. Seubert</p><br></br>
-                        <p>Creative Technologist</p>
-                    </div>
-                    <div id="link-to-profile">
-                        <a href="#" onClick={this.scrollToWork}><i className="fas fa-chevron-circle-down next-section"></i></a>
-                    </div>
-                </div>
-                <div id="section1-break" className="section-break"></div>
                 <div id="green" className="section">
-                    <div><h1 className="section-content">Green Section</h1></div>
-                    <div id="green-content"><h1>Green Content</h1></div>
+                    <div id="title-section">
+                        <div id="title" className="title">
+                            <h4>Jonathan C. Seubert</h4>
+                            <h4>Creative Technologist</h4>
+                        </div>
+                        <div id="profile-section">
+                            <h5>
+                            I'm an artist and technologist who is constantly striving to
+                            perfect my craft as a writer of screenplays as well as software
+                            programs. I'm constantly endeavouring to use my artistic and
+                            technological skills to develop projects that are thought provoking
+                            and enrich people's lives.
+                            </h5>
+                        </div>
+                        <div id="apps-next" className="next-icon">
+                            <button id="profile-section-next" onClick={this.scrollToWork}><i className="fas fa-chevron-down"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <div id="section2-break" className="section-break"></div>
                 <div id="blue" className="section">

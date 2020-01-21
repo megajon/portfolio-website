@@ -144,6 +144,26 @@ body {
     margin-top: 1em;
   }
 
+  #title-section {
+    position: relative;
+    top: 2em;
+  }
+
+  #profile-section {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    line-height: 2em;
+  }
+
+  #profile-section-next {
+    font-size: 5em;
+    color: black;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+  }
+
   video {
     width: 100%;
   }
@@ -161,7 +181,12 @@ body {
   }
 
   #title {
+    position: relative;
+    text-align: center;
+  }
 
+  #title h4 {
+    margin: 0;
   }
 
   #link-to-profile {
@@ -189,7 +214,8 @@ body {
   
   #green {
     width: 100%;
-    background-color: green;
+    height: 28em;
+    /* background-color: green; */
   }
   
   #blue {
