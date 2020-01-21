@@ -146,7 +146,7 @@ body {
 
   #title-section {
     position: relative;
-    top: 1em;
+
   }
 
   #profile-section {
@@ -191,8 +191,8 @@ body {
 
   #link-to-profile {
       position: relative;
-      text-align: center;
-      top: 2em;
+      /* text-align: center; */
+      top: 1em;
   }
 
   #link-to-profile a {
@@ -364,7 +364,7 @@ body {
     .next-icon {
       position: relative;
       text-align: center;
-      margin-top: 2em;
+      margin-top: 1em;
       /* top: 15.1em; */
     }
 
