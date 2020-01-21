@@ -25,7 +25,27 @@ body {
   a {
       text-decoration: none;
   }
+
+  #john-brown-link {
+    background-color: black;
+    /* border: 1px solid black; */
+    border-radius: 2%;
+    color: white;
+    text-align: center;
+    height: 12em;
+  }
+
+  #john-brown-image {
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+  }
   
+  .link-title {
+    position: relative;
+    top:0.5em;
+    text-align: center;
+    color: white;
+  }
   
   /* main navbar mobile */
 

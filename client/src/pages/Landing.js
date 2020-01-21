@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom';
 import ProjectSecton from '../components/ProjectSection'
 import InfoSection from '../components/InfoSection';
+import SoundVideo from '../components/SoundVideo';
 
 class Landing extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            slideIndex: 0
+            slideIndex: 1
         }
         this.scrollToProfile = this.scrollToProfile.bind(this);
         this.scrollToWork = this.scrollToWork.bind(this);
@@ -23,7 +24,7 @@ class Landing extends Component {
             for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slides[this.state.slideIndex].style.display = "block";
+            slides[0].style.display = "block";
             slides[this.state.slideIndex].style.background = "silver";
         }
         renderSlides();
@@ -123,6 +124,15 @@ class Landing extends Component {
                     </div>
                 </div>
                 <div id="section2-break" className="section-break"></div>
+                <a href="/johnbrown">
+                <div id="john-brown-link">
+                    <img id="john-brown-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
+                    <p className="link-title">John Brown - Screenplay</p>
+                    {/* <div className="link-title">
+                        <p>John Brown - Screenplay</p>
+                    </div> */}
+                </div>
+                </a>
                 <div id="blue" className="section">
                     <div className="section-title"><h1>apps</h1></div>
                                                
@@ -152,8 +162,8 @@ class Landing extends Component {
                             </div>
                         <div id="panel-controls">
                             <center>
-                            <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i className="fas fa-step-backward"></i></a>
-                            <a href="#" id="next" className="next" onClick={this.slideForward}><i className="fas fa-step-forward"></i></a>
+                            <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i class="fas fa-caret-left"></i></a>
+                            <a href="#" id="next" className="next" onClick={this.slideForward}><i class="fas fa-caret-right"></i></a>
                             </center>
                         </div>
                     <center>
@@ -164,7 +174,7 @@ class Landing extends Component {
                 </div>
                 <div id="section3-break" className="section-break"></div>
                 <div id="yellow" className="section">
-                    <ProjectSecton />
+                    <SoundVideo />
                 </div>
                 <div id="section4-break" className="section-break"></div>
                 <InfoSection />
