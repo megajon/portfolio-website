@@ -118,6 +118,7 @@ body {
     width: 90%;
     margin: auto;
     text-align: justify;
+    margin-top: 1em;
   }
 
   .question-modal {
@@ -132,9 +133,15 @@ body {
     font-size: 1em;
   }
 
+  .download-button {
+    width: 100%;
+    background-color: red;
+  }
+
   #omega-man-image {
     width: 100%;
     border: none;
+    margin-top: 1em;
   }
   
   #first {
