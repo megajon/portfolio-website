@@ -143,6 +143,10 @@ body {
     border: none;
     margin-top: 1em;
   }
+
+  video {
+    width: 100%;
+  }
   
   #first {
     top: 0;
