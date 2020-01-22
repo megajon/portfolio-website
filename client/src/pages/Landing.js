@@ -131,50 +131,6 @@ class Landing extends Component {
                 <SoundVideo />
                 <div id="section4-break" className="section-break"></div>
                 <InfoSection />
-                {/* <div id="blue" className="section">
-                    <div className="section-title"><h1>apps</h1></div>
-                                               
-                            <div id="stocktwits-panel" className="app-panel panel">
-                                <a href="/stocktwits">
-                                    <div className="panel-content">
-                                        <p id="stocktwits-logo" className="stocktwits-content">$</p>
-                                        <p id="stocktwits-title" className="stocktwits-content">Search Stocktwits</p>
-                                    </div>
-                                </a>
-                            </div>   
-                        
-                        
-                            <div id="green-panel" className="app-panel panel">
-                                <div className="panel-content">
-                                    <p>two</p>
-                                </div>
-                                <div className="panel-title">Panel Title</div>
-                            </div>
-                        
-                        
-                            <div id="blue-panel" className="app-panel panel">
-                                <div className="panel-content">
-                                    <p>three</p>
-                                </div>
-                                <div className="panel-title">Panel Title</div>
-                            </div>
-                        <div id="panel-controls">
-                            <center>
-                            <a href="#" id="prev" className="prev" onClick={this.slideBackward}><i class="fas fa-caret-left"></i></a>
-                            <a href="#" id="next" className="next" onClick={this.slideForward}><i class="fas fa-caret-right"></i></a>
-                            </center>
-                        </div>
-                    <center>
-                    <div id="apps-next" className="next-icon">
-                        <button id="app-section-next" onClick={this.scrollToInfo}><i className="fas fa-chevron-down"></i></button>
-                    </div>
-                    </center>
-                </div>
-                <div id="section3-break" className="section-break"></div>
-                <div id="yellow" className="section">
-                    <SoundVideo />
-                </div> */}
-                
             </>
         )
     }
@@ -182,9 +138,3 @@ class Landing extends Component {
 }
 
 export default Landing;
-
-{/* <div>
-                        <span className="dot" onClick={currentSlide(1)}></span> 
-                        <span className="dot" onClick={currentSlide(2)}></span> 
-                        <span className="dot" onClick={currentSlide(3)}></span> 
-                    </div> */}

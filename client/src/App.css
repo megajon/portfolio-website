@@ -46,7 +46,6 @@ body {
     border-radius: 4%;
     color: white;
     text-align: center;
-    /* height: 12em; */
   }
 
   #stocktwits-image {
@@ -60,7 +59,7 @@ body {
   }
 
   #stocktwits-link {
-    height: 12em;
+    height: 13em;
   }
 
   #john-brown-link {
@@ -666,12 +665,27 @@ body {
         margin: 0 auto;
     }
 
+    h1 {
+      color: white;
+      text-decoration: underline;
+    }
+  
+    h4, h5 {
+      color: white;
+  
+    }
+  
+    p {
+        margin: 0;
+        color: white;
+    }
+  
     a {
         text-decoration: none;
     }
 
     h1 {
-        margin: 0;
+        /* margin: 0; */
     }
 
     button {
@@ -693,7 +707,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: transparent;
+        background-color: black;
         /* width: 100%; */
         /* width: 60em; */
         height: 5em;
@@ -709,10 +723,6 @@ body {
         padding-left: 0;
         margin: 0 auto;
         margin-top: 0.5em;
-        /* position: fixed;
-        left: 88em;
-        top: 0.4em; */
-        /* right: 25em; */
     }
 
     div#main-navbar ul li {
@@ -725,17 +735,17 @@ body {
         color: white;
     }
 
-    /* splash page */
-  
-    .section {
-        /* height: 54em; */
+    #title-section {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
     }
-    
-    /* #first {
-        top: 0;
-        
-        height: 5em;
-    } */
+
+    #profile-section {
+      text-align: justify;
+      line-height: 3.3;
+      font-size: 2em;
+    }
 
     #first {
         top: 0;
@@ -762,12 +772,7 @@ body {
     }
     
     #green {
-        background-color: green;
-    }
-    
-    #blue {
-        /* background-color: blue; */
-        /* height: 60em; */
+        width: 100%;
     }
 
     .section-title {
@@ -782,21 +787,46 @@ body {
     }
 
 
-    .panel {
+
+    #profile-section-next {
+      /* display: none; */
+      color: white;
+      font-size: 4em;
+    }
+
+    .project-link {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 1em;
+      text-align: center;
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,251,255,1) 0%, rgba(245,240,240,1) 77%);
+      background-color: #485461;
+      background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+      border-radius: 4%;
+      color: white;
+    }
+
+    .project-link-img {
+      /* width: 100%; */
+      border-top-left-radius: 3%;
+      border-top-right-radius: 3%;
+    }
+    /* .panel {
         position: relative;
         width: 24em;
         height: 12em;
         margin: auto;
         background-color: black;
-        
-    }
+    } */
 
-    .panel-content {
+    /* .panel-content {
       position: relative;
       top: 0.1em;
-    }
+    } */
 
-    .stocktwits-content {
+
+
+    /* .stocktwits-content {
       margin: 0;
       text-align: center;
       color: white;
@@ -809,16 +839,16 @@ body {
 
     #stocktwits-title {
       font-size: 4em;
-    }
+    } */
 
     /* .panel-content {
       position: relative;
       margin: auto;
     } */
 
-    .prev, .next {
+    /* .prev, .next {
       color: black;
-      top: 2em;
+      top: 2em; */
       /* cursor: pointer;
       position: absolute;
       top: 50%;
@@ -831,19 +861,16 @@ body {
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none; */
-    }
     
-    #prev {
+    
+    /* #prev {
       position: relative;
-      /* bottom: 17em; */
       right: 5em;
-    }
+    } */
 
-    #next {
+    /* #next {
       position: relative;
       left: 5em;
-      /* bottom: 17em; */
-      /* left: 53.1em; */
     }
 
     #prev i {
@@ -856,7 +883,7 @@ body {
 
     #apps-next, #projects-next {
       display: none;
-    }
+    } */
 
     /* #prev, #next {
       font-size: 1em;
@@ -895,6 +922,54 @@ body {
 
     #info-section {
       height: 40em;
+    }
+
+    #social-media-links1 {
+      width: 100%;
+      background-color: transparent;
+    }
+  
+    #info-section {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+      height: 40em;
+      top: 5em;
+    }
+  
+    #social-media-links1 a {
+      float: left;
+      width: 25%;
+      text-align: center;
+      font-size: 2.5em;
+    }
+  
+    #social-media-links1 a i, #social-media-links2 a i {
+      color: white;
+    }
+  
+    #social-media-links2 {
+      display: inline-block;
+      position: relative;
+      top: 1em;
+      width: 100%;
+    }
+  
+    #social-media-links2 a {
+      float: left;
+      width:50%;
+      text-align: center;
+      font-size: 2.5em;
+    }
+  
+    #cv-icon {
+      color: white;
+    }
+  
+    #copyright {
+      position: relative;
+      top: 5em;
     }
     
     /* #section3-break {

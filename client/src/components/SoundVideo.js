@@ -81,7 +81,7 @@ class SoundVideo extends Component {
                 </div>
                 <a href="/omegaman">
                     <div id="omega-man-link" className="project-link">
-                        <img id="omega-man-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/the-omega-man.jpg" />
+                        <img id="omega-man-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/the-omega-man.jpg" width="100%" />
                         <p className="link-title">The Omega Man - Sound Experience</p>
                     </div>
                 </a>
@@ -89,14 +89,14 @@ class SoundVideo extends Component {
                 <br></br>
                 <a href="/lightingtest">
                     <div id="lighting-test-link" className="project-link">
-                        <img id="lighting-test-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
+                        <img id="lighting-test-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" width="100%" />
                         <p className="link-title">Digital Video Lighting Test</p>
                     </div>
                 </a>
                 <br></br>
                 <a href="/cine1">
                     <div id="cine1-link" className="project-link">
-                        <img id="cine1-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.png" />
+                        <img id="cine1-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.png" width="100%" />
                         <p className="link-title">Cinematography 101 Footage</p>
                     </div>
                 </a>
