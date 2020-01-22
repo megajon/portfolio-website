@@ -4,9 +4,7 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,251,255,1) 0%, rgba(245,240,240,1) 77%);
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-color: black;
 }
 
 
@@ -20,8 +18,19 @@ body {
     width: 100%;
   } */
 
+  h1 {
+    color: white;
+    text-decoration: underline;
+  }
+
+  h4, h5 {
+    color: white;
+
+  }
+
   p {
       margin: 0;
+      color: white;
   }
 
   a {
@@ -29,8 +38,11 @@ body {
   }
 
   .project-link {
-    background-color: black;
+    /* background-color: black; */
     /* border: 1px solid black; */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,251,255,1) 0%, rgba(245,240,240,1) 77%);
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     border-radius: 4%;
     color: white;
     text-align: center;
@@ -102,10 +114,7 @@ body {
   }
   
   div#main-navbar {
-    /* background-color: black; */
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,251,255,1) 0%, rgba(245,240,240,1) 77%);
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-color: black;
     width: 100%;
     height: 5em;
     position: fixed;
@@ -129,6 +138,7 @@ body {
   
   div#main-navbar ul li i {
     font-size: 4em;
+    color: white;
   }
 
   
@@ -212,7 +222,7 @@ body {
 
   #profile-section-next {
     font-size: 5em;
-    color: black;
+    color: white;
     background-color: transparent;
     border-radius: 50%;
     border: none;
@@ -285,32 +295,23 @@ body {
   }
 
   .section-title h1 {
-      /* margin: 0, 0, 2em, 0; */
       font-size: 3em;
   }
 
-    /* .appSlides {
-        display: none;
-        height: 30em;
-    } */
+  
 
     .appSlides-container {
         position: relative;
         top: .1em;
-        /* width: 100%; */
         width: 80%;
         height: 3em;
-        /* background-color: red; */
-        /* top: 20%; */
         margin: auto;
     }
 
     .panel {
         position: relative;
-        /* width: 50em; */
         height: 37%;
         margin: auto;
-        /* background-color: black; */
         border-radius: 4%;
     }
 
@@ -350,32 +351,14 @@ body {
       background-color: blue;
     }
 
-    /* .panel-content {
-      position: relative;
-      margin: auto;
-    } */
 
     .prev, .next {
       color: black;
       top: 1em;
-      /* bottom: 2em; */
-      /* cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none; */
     }
     
     #prev {
       position: relative;
-      /* bottom: 10em; */
       right: 2.5em;
     }
 
@@ -391,10 +374,6 @@ body {
     #next i {
       font-size: 4em;
     }
-
-    /* #prev, #next {
-      font-size: 1em;
-    } */
 
     #dots {
         text-align: center;
@@ -419,7 +398,6 @@ body {
       position: relative;
       text-align: center;
       margin-top: 0.5em;
-      /* top: 15.1em; */
     }
 
     #app-section-next i {
@@ -431,8 +409,7 @@ body {
     }
 
   #yellow {
-    /* width: 100%;
-    background-color: yellow; */
+    
   }
   
   #section4-break {
@@ -442,7 +419,6 @@ body {
   #social-media-links1 {
     width: 100%;
     background-color: transparent;
-    /* overflow: auto; */
   }
 
   #info-section {
@@ -459,12 +435,15 @@ body {
     font-size: 2.5em;
   }
 
+  #social-media-links1 a i, #social-media-links2 a i {
+    color: white;
+  }
+
   #social-media-links2 {
     display: inline-block;
     position: relative;
     top: 1em;
     width: 100%;
-    /* background-color: transparent; */
   }
 
   #social-media-links2 a {
@@ -472,6 +451,10 @@ body {
     width:50%;
     text-align: center;
     font-size: 2.5em;
+  }
+
+  #cv-icon {
+    color: white;
   }
 
   #copyright {
@@ -484,14 +467,13 @@ body {
   }
 
   #cv-icon {
-    /* position: relative; */
     
   }
 
   #copyright {
     position: relative;
     text-align: center;
-    top: 10em;
+    top: 16em;
   }
 
   
