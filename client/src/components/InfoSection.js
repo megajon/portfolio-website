@@ -15,7 +15,7 @@ class InfoSection extends Component {
                         <a id="mail-icon"><i class="fas fa-envelope"></i></a>
                         <a id="cv-icon">CV</a>
                     </div>
-                    <div id="copyright"><p>&#169; Jonathan C. Seubert 2020</p></div>
+                    {/* <div id="copyright"><p>&#169; Jonathan C. Seubert 2020</p></div> */}
                 </div>
                 
             </>

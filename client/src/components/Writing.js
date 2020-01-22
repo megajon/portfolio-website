@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
-class SoundVideo extends Component {
+class Writing extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            slideIndex: 1
-        }
+        // this.state = {
+        //     slideIndex: 1
+        // }
         // this.scrollToProfile = this.scrollToProfile.bind(this);
         // this.scrollToWork = this.scrollToWork.bind(this);
         // this.scrollToInfo = this.scrollToInfo.bind(this);
@@ -14,6 +14,35 @@ class SoundVideo extends Component {
 
     }
 
+    render() {
+        return (
+            <>
+                <div className="section-title">
+                    <h1>Writing</h1>
+                </div>
+                {/* <a href="/johnbrown" className="project-link">
+                    <div id="john-brown-link">
+                        <img id="john-brown-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
+                        <p className="link-title">John Brown - Screenplay</p>
+                    </div>
+                </a> */}
+                <br></br>
+                <a href="/johnbrown">
+                    <div id="john-brown-link" className="project-link">
+                        <img id="john-brown-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
+                        <p className="link-title">John Brown - Screenplay</p>
+                    </div>
+                </a>
+                <br></br>
+                <a href="/enforcer">
+                    <div id="enforcer-link" className="project-link">
+                        <img id="enforcer-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" width="100%" />
+                        <p className="link-title">The Enforcer - Short Screenplay</p>
+                    </div>
+                </a>
+            </>
+        )
+    }
     // componentWillMount() {
     //     const renderSlides = async () => {
     //         let slides = await document.getElementsByClassName("sound-video-panel");
@@ -73,36 +102,7 @@ class SoundVideo extends Component {
     //     this.showSlides(this.state.slideIndex += n);
     // }
 
-    render() {
-        return (
-            <>
-                <div className="section-title">
-                    <h1>Sound & Video</h1>
-                </div>
-                <a href="/omegaman">
-                    <div id="omega-man-link" className="project-link">
-                        <img id="omega-man-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/the-omega-man.jpg" />
-                        <p className="link-title">The Omega Man - Sound Experience</p>
-                    </div>
-                </a>
-                
-                <br></br>
-                <a href="/lightingtest">
-                    <div id="lighting-test-link" className="project-link">
-                        <img id="lighting-test-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
-                        <p className="link-title">Digital Video Lighting Test</p>
-                    </div>
-                </a>
-                <br></br>
-                <a href="/cine1">
-                    <div id="cine1-link" className="project-link">
-                        <img id="cine1-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.png" />
-                        <p className="link-title">Cinematography 101 Footage</p>
-                    </div>
-                </a>
-            </>
-        )
-    }
+    
 }
 
-export default SoundVideo;
+export default Writing;

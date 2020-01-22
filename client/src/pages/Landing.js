@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ReactDOM, { render } from 'react-dom';
 import ProjectSecton from '../components/ProjectSection'
 import InfoSection from '../components/InfoSection';
+import Apps from '../components/Apps';
+import Writing from '../components/Writing';
 import SoundVideo from '../components/SoundVideo';
 
 class Landing extends Component {
@@ -18,17 +20,17 @@ class Landing extends Component {
 
     }
 
-    componentWillMount() {
-        const renderSlides = async () => {
-            let slides = await document.getElementsByClassName("app-panel");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[0].style.display = "block";
-            slides[this.state.slideIndex].style.background = "silver";
-        }
-        renderSlides();
-    }
+    // componentWillMount() {
+    //     const renderSlides = async () => {
+    //         let slides = await document.getElementsByClassName("app-panel");
+    //         for (let i = 0; i < slides.length; i++) {
+    //             slides[i].style.display = "none";
+    //         }
+    //         slides[0].style.display = "block";
+    //         slides[this.state.slideIndex].style.background = "silver";
+    //     }
+    //     renderSlides();
+    // }
 
 
     scrollToProfile = (e) => {
@@ -124,16 +126,12 @@ class Landing extends Component {
                     </div>
                 </div>
                 <div id="section2-break" className="section-break"></div>
-                <a href="/johnbrown">
-                <div id="john-brown-link">
-                    <img id="john-brown-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
-                    <p className="link-title">John Brown - Screenplay</p>
-                    {/* <div className="link-title">
-                        <p>John Brown - Screenplay</p>
-                    </div> */}
-                </div>
-                </a>
-                <div id="blue" className="section">
+                <Apps />
+                <Writing />
+                <SoundVideo />
+                <div id="section4-break" className="section-break"></div>
+                <InfoSection />
+                {/* <div id="blue" className="section">
                     <div className="section-title"><h1>apps</h1></div>
                                                
                             <div id="stocktwits-panel" className="app-panel panel">
@@ -175,9 +173,8 @@ class Landing extends Component {
                 <div id="section3-break" className="section-break"></div>
                 <div id="yellow" className="section">
                     <SoundVideo />
-                </div>
-                <div id="section4-break" className="section-break"></div>
-                <InfoSection />
+                </div> */}
+                
             </>
         )
     }
