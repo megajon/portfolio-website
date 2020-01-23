@@ -13,7 +13,7 @@ class InfoSection extends Component {
                     </div>
                     <div id="social-media-links2">
                         <a id="mail-icon" href="mailto:jonathan.seubert@megajon.com"><i class="fas fa-envelope"></i></a>
-                        <a href="" id="cv-icon">CV</a>
+                        <a href="https://seubsworld-assets.s3.amazonaws.com/assets/JonathanSeubert_Resume.pdf" id="cv-icon">CV</a>
                     </div>
                     <div id="copyright"><p>&#169; Jonathan C. Seubert 2020</p></div>
                 </div>
