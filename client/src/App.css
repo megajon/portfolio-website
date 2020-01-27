@@ -38,8 +38,6 @@ body {
   }
 
   .project-link {
-    /* background-color: black; */
-    /* border: 1px solid black; */
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(242,251,255,1) 0%, rgba(245,240,240,1) 77%);
     background-color: #485461;
     background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
@@ -59,7 +57,7 @@ body {
   }
 
   #stocktwits-link {
-    height: 14em;
+    height: 15.5em;
   }
 
   #john-brown-link {
