@@ -7,15 +7,13 @@ class TheEnforcer extends Component {
                 <div className="page-header">
                     <ul className="header-items">
                         <li className="header-back-button"><a href="/"><button className="back-button">&#8592; back</button></a></li>
-                        <li><p className="header-title">The Enforcer</p></li>
-                        <li className="question-modal"><button className="modal-button">?</button></li>
                     </ul>
                 </div>
                 <div className="page-title">
                     <h2>The Enforcer:</h2>
                     <h2>A Short Screenplay</h2>
                 </div>
-                <img id="omega-man-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
+                <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
     
                 <div className="page-content">
                     <p>

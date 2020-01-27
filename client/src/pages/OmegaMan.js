@@ -7,15 +7,13 @@ class OmegaMan extends Component {
                 <div className="page-header">
                     <ul className="header-items">
                         <li className="header-back-button"><a href="/"><button className="back-button">&#8592; back</button></a></li>
-                        <li><p className="header-title">The Omega Man</p></li>
-                        <li className="question-modal"><button className="modal-button">?</button></li>
                     </ul>
                 </div>
                 <div className="page-title">
                     <h2>The Omega Man:</h2>
                     <h2>A Sound Experience</h2>
                 </div>
-                <img id="omega-man-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man.jpg" />
+                <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man.jpg" />
                 <div id="omega-man-audio">
                     <audio src="https://seubsworld-assets.s3.amazonaws.com/assets/Omega_Man_Rough+5.mp3" controls />
                 </div>
