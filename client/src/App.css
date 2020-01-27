@@ -172,6 +172,7 @@ body {
   }
 
   .header-back-button {
+    background-color: white;
     position: relative;
     right: 3em;
   }
@@ -481,6 +482,21 @@ body {
 
   
   /* stocktwits page */
+
+  #stocktwits-modal {
+    display: none;
+    top: 7em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .close {
+    color: red;
+    left: 2em;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
   #stocktwits-header {
     position: relative;
@@ -970,6 +986,16 @@ body {
     }
     
     /* stocktwits */
+
+    .back-button {
+      background-color: white;
+    }
+
+    .modal-button {
+      background-color: white;
+      color: black;
+      border-radius: 50%;
+    }
 
     .search-box {
       width: 100%;
