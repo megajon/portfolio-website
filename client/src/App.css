@@ -485,16 +485,32 @@ body {
 
   #stocktwits-modal {
     display: none;
-    top: 7em;
+    /* top: 7em; */
     position: fixed;
-    width: 100%;
+    width: 95%;
+    height: 100%;
     z-index: 1;
+    background-color: black;
+    /* text-align: center; */
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+  }
+
+  #stocktwits-modal p {
+    position: relative;
+    width: 86%;
+    top: 3em;
+    left: 1.4em;
+    text-align: justify;
+    line-height: 2em;
+    /* text-align: center; */
   }
 
   .close {
     color: red;
-    left: 2em;
-    font-size: 28px;
+    float: right;
+    margin-right: 0.5em;
+    font-size: 2.5em;
     font-weight: bold;
   }
 
