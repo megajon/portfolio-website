@@ -180,9 +180,21 @@ body {
   }
 
   .header-back-button {
-    background-color: white;
+    background-color: black;
     position: relative;
+    /* margin-right: 1em; */
     right: 2em;
+  }
+
+  .header-back-button a i {
+    color: white;
+    font-size: 2em;
+  }
+
+  .header-title {
+    position: relative;
+    bottom: 0.2em;
+    font-size: 1.4em;
   }
 
   .page-title h2 {
@@ -199,7 +211,8 @@ body {
 
   .question-modal {
     position: relative;
-    left: 4em;
+    left: 3.5em;
+    bottom: 0.3em;
   }
 
   .modal-button {

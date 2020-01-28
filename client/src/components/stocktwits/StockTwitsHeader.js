@@ -29,7 +29,7 @@ class StockTwitsHeader extends Component {
             <>
             <div className="page-header">
                 <ul className="header-items">
-                    <li className="header-back-button"><a href="/"><button className="back-button">&#8592; back</button></a></li>
+                    <li className="header-back-button"><a href="/"><i class="fa fa-arrow-left"></i></a></li>
                     <li><p className="header-title">Search StockTwits</p></li>
                     <li className="question-modal"><button id="stocktwits-question" className="modal-button" onClick={this.showModal}>?</button></li>
                 </ul>
