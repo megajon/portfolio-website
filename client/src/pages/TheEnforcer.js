@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import BackButton from '../components/BackButton';
+import DownloadPDF from '../components/DownloadPDF';
 
 class TheEnforcer extends Component {
     render() {
@@ -7,7 +8,8 @@ class TheEnforcer extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <BackButton />
+                        <BackButton url="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" />
+                        <DownloadPDF url="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" />
                     </ul>
                 </div>
                 <div className="page-title">

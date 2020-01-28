@@ -9,7 +9,7 @@ class JohnBrown extends Component {
                 <div className="page-header">
                     <ul className="header-items">
                         <BackButton />
-                        <DownloadPDF />
+                        <DownloadPDF url="https://seubsworld-assets.s3.amazonaws.com/assets/jb_sample.pdf" />
                     </ul>
                 </div>
                 <div className="page-title">
