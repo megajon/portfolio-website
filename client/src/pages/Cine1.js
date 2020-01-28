@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import BackButton from '../components/BackButton';
 
 class Cine1 extends Component {
     render() {
@@ -6,9 +7,7 @@ class Cine1 extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <li className="header-back-button"><a href="/"><button className="back-button">&#8592; back</button></a></li>
-                        <li><p className="header-title">The Enforcer</p></li>
-                        <li className="question-modal"><button className="modal-button">?</button></li>
+                        <BackButton />
                     </ul>
                 </div>
                 <div className="page-title">
