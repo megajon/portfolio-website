@@ -1132,10 +1132,10 @@ body {
       display: inline-block;
     }
 
-    #stocktwits-header-back-button {
+    #stocktwits-header-button {
       background-color: black;
       position: relative;
-      right: 7em;
+      right: 7.2em;
     }
 
     .header-back-button {
