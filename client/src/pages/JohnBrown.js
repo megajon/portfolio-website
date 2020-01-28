@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import BackButton from '../components/BackButton';
+import DownloadPDF from '../components/DownloadPDF';
 
 class JohnBrown extends Component {
     render() {
@@ -8,6 +9,7 @@ class JohnBrown extends Component {
                 <div className="page-header">
                     <ul className="header-items">
                         <BackButton />
+                        <DownloadPDF />
                     </ul>
                 </div>
                 <div className="page-title">
@@ -32,7 +34,6 @@ class JohnBrown extends Component {
                     in the late 1840’s to his raid on Hapror’s Ferry and his execution.
                     </p>
                     <br></br>
-                    <a href="https://seubsworld-assets.s3.amazonaws.com/assets/jb_sample.pdf" className="download-button">Download Screenplay</a>
                 </div>
             </>
         )

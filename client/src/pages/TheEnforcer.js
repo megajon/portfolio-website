@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import BackButton from '../components/BackButton';
 
 class TheEnforcer extends Component {
     render() {
@@ -6,7 +7,7 @@ class TheEnforcer extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <li className="header-back-button"><a href="/"><button className="back-button">&#8592; back</button></a></li>
+                        <BackButton />
                     </ul>
                 </div>
                 <div className="page-title">

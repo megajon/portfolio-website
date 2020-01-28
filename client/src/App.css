@@ -225,8 +225,15 @@ body {
   }
 
   .download-button {
+    background-color: white;
+    color: black;
+    position: relative;
+    padding: 0.2em;
+    border-radius: 4%;
+    bottom: 0.5em;
+    left: 7em;
     width: 100%;
-    background-color: red;
+    
   }
 
   
