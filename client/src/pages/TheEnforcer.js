@@ -16,10 +16,12 @@ class TheEnforcer extends Component {
                     <h2>The Enforcer:</h2>
                     <h2>A Short Screenplay</h2>
                 </div>
-                <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
+                <div className="project-image-div">
+                    <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
+                </div>
     
                 <div className="page-content">
-                    <p>
+                    <p id="enforcer-p">
                     The Enforcer is the story of Trevor, an unemployed young man living in
                     San Francisco. Rapidly running low on funds, Trevor wakes up one morning
                     and prepares for an important interview downtown. He showers, shaves,
@@ -32,7 +34,6 @@ class TheEnforcer extends Component {
                     as Trevor enters his interview.
                     </p>
                     <br></br>
-                    <a href="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" className="download-button">Download Screenplay</a>
                 </div>
             </>
         )

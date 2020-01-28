@@ -16,7 +16,9 @@ class JohnBrown extends Component {
                     <h2>John Brown:</h2>
                     <h2>A Biopic Screenplay</h2>
                 </div>
-                <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" />
+                <div className="project-image-div">
+                    <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" />
+                </div>
     
                 <div className="page-content">
                     <p>

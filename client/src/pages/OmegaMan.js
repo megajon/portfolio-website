@@ -14,11 +14,13 @@ class OmegaMan extends Component {
                     <h2>The Omega Man:</h2>
                     <h2>A Sound Experience</h2>
                 </div>
-                <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man.jpg" />
-                <div id="omega-man-audio">
-                    <audio src="https://seubsworld-assets.s3.amazonaws.com/assets/Omega_Man_Rough+5.mp3" controls />
+                <div className="project-image-div">
+                    <img className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man.jpg" />
+                    <div id="omega-man-audio">
+                        <audio src="https://seubsworld-assets.s3.amazonaws.com/assets/Omega_Man_Rough+5.mp3" controls />
+                    </div>
                 </div>
-                <div className="page-content">
+                <div id="omega-content" className="page-content">
                     <p>
                     This was one of the most difficult, but rewarding projects that I worked on during my time in film school. 
                     The assignment, which was for my Sound 2 Class, was to select a script for an existing film and adapted it
