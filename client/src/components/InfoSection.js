@@ -9,7 +9,7 @@ class InfoSection extends Component {
                         <a id="linkedin" href="https://www.linkedin.com/in/jonathan-seubert/"><i class="fab fa-linkedin"></i></a>
                         <a id="github" href="https://github.com/megajon"><i class="fab fa-github"></i></a>
                         <a id="facebook" href="https://www.facebook.com/jonathan.seubert"><i class="fab fa-facebook-square"></i></a>
-                        <a id="twitter" href="https://twitter.com/JSeubs"><i class="fab fa-twitter"></i></a>
+                        <a id="twitter" href="https://twitter.com/seubert_c"><i class="fab fa-twitter"></i></a>
                     </div>
                     <div id="social-media-links2">
                         <a id="mail-icon" href="mailto:jonathan.seubert@megajon.com"><i class="fas fa-envelope"></i></a>
