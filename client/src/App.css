@@ -708,11 +708,9 @@ body {
 
 /* Mobile devices with higher height dimension */
 
-@media screen and (min-height: 600px) {
-  /* #blue {
-    height: 50em;
-  } */
-}
+/* @media screen and (min-height: 600px) {
+  
+} */
 
 
 @media screen and (min-width: 701px) {
@@ -1116,7 +1114,7 @@ body {
 
     .close {
       position: relative;
-      left: 9.9em;
+      /* left: 14em; */
       color: red;
       /* float: right; */
       margin-right: 0.5em;
