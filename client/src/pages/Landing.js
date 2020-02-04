@@ -108,10 +108,11 @@ class Landing extends Component {
                 <div id="green" className="section">
                     <div id="title-section">
                         <div id="title" className="title">
+                            <img id="profile-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/photo_50.jpg" />
                             <h4>Jonathan C. Seubert</h4>
-                            <h4>Creative Technologist</h4>
+                            <h4>Writer & UX Engineer</h4>
                         </div>
-                        <div id="profile-section">
+                        {/* <div id="profile-section">
                             <h5>
                             I'm an artist and technologist who is constantly striving to
                             perfect my craft as a writer of screenplays as well as software
@@ -122,7 +123,7 @@ class Landing extends Component {
                         </div>
                         <div id="apps-next" className="next-icon">
                             <button id="profile-section-next" onClick={this.scrollToWork}><i className="fas fa-chevron-down"></i></button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div id="section2-break" className="section-break"></div>

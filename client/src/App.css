@@ -51,6 +51,13 @@ body {
     text-align: center;
   }
 
+  #profile-image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    transform: rotate(90deg);
+  }
+
   #stocktwits-image {
     height: 7em;
     background-color: black;
