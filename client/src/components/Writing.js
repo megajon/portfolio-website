@@ -17,9 +17,9 @@ class Writing extends Component {
     render() {
         return (
             <>
-                <div className="section-title">
+                {/* <div className="section-title">
                     <h1>Writing</h1>
-                </div>
+                </div> */}
                 {/* <a href="/johnbrown" className="project-link">
                     <div id="john-brown-link">
                         <img id="john-brown-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
@@ -27,19 +27,21 @@ class Writing extends Component {
                     </div>
                 </a> */}
                 <br></br>
-                <a href="/johnbrown">
-                    <div id="john-brown-link" className="project-link">
-                        <img id="john-brown-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
-                        <p className="link-title">John Brown - Screenplay</p>
-                    </div>
-                </a>
-                <br></br>
-                <a href="/enforcer">
-                    <div id="enforcer-link" className="project-link">
-                        <img id="enforcer-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" width="100%" />
-                        <p className="link-title">The Enforcer - Short Screenplay</p>
-                    </div>
-                </a>
+                <div id="writing" className="project-links">
+                    <a href="/johnbrown">
+                        <div id="john-brown-link" className="project-link">
+                            <img id="john-brown-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" width="100%" />
+                            <p className="link-title">John Brown - Screenplay</p>
+                        </div>
+                    </a>
+                    <br></br>
+                    <a href="/enforcer" className="project-links">
+                        <div id="enforcer-link" className="project-link">
+                            <img id="enforcer-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" width="100%" />
+                            <p className="link-title">The Enforcer - Short Screenplay</p>
+                        </div>
+                    </a>
+                </div>
             </>
         )
     }

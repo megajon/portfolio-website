@@ -17,15 +17,17 @@ class Apps extends Component {
     render() {
         return (
             <>
-                <div className="section-title">
+                {/* <div className="section-title">
                     <h1>Apps</h1>
+                </div> */}
+                <div id="apps" className="project-links">
+                    <a href="/stocktwits">
+                        <div id="stocktwits-link" className="project-link">
+                            <img id="john-brown-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/markus-spiske-3Tf1J8q9bBA-unsplash.jpg" width="100%" />
+                            <p className="link-title">Search Stocktwits</p>
+                        </div>
+                    </a>
                 </div>
-                <a href="/stocktwits" >
-                    <div id="stocktwits-link" className="project-link">
-                        <img id="john-brown-image" className="project-link-img" src="https://seubsworld-assets.s3.amazonaws.com/assets/markus-spiske-3Tf1J8q9bBA-unsplash.jpg" width="100%" />
-                        <p className="link-title">Search Stocktwits</p>
-                    </div>
-                </a>
             </>
         )
     }

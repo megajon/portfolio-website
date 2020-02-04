@@ -17,6 +17,9 @@ class Landing extends Component {
         this.scrollToInfo = this.scrollToInfo.bind(this);
         this.slideForward = this.slideForward.bind(this);
         this.slideBackward = this.slideBackward.bind(this);
+        this.showApps = this.showApps.bind(this);
+        this.showWriting = this.showWriting.bind(this);
+        this.showAV = this.showAV.bind(this);
 
     }
 
@@ -32,6 +35,9 @@ class Landing extends Component {
     //     renderSlides();
     // }
 
+    componentDidMount() {
+        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none")
+    }
 
     scrollToProfile = (e) => {
         e.preventDefault();
@@ -48,7 +54,23 @@ class Landing extends Component {
         document.querySelector('#section4-break').scrollIntoView({ behavior: 'smooth' });
     }
 
+    showApps = (e) => {
+        e.preventDefault();
+        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
+        document.querySelector("div#apps").style.display = "block";
+    }
     
+    showWriting = (e) => {
+        e.preventDefault();
+        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
+        document.querySelector("div#writing").style.display = "block";
+    }
+    
+    showAV = (e) => {
+        e.preventDefault();
+        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
+        document.querySelector("div#av").style.display = "block";
+    }
 
     // currentSlide(n) {
     //     showSlides(slideIndex = n);
@@ -105,13 +127,14 @@ class Landing extends Component {
                 <div id="first">
                     <h1 id="first-section"></h1>
                 </div>
-                <div id="green" className="section">
+                {/* <div id="green" className="section"> */}
                     <div id="title-section">
                         <div id="title" className="title">
                             <img id="profile-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/photo_50.jpg" />
                             <h4>Jonathan C. Seubert</h4>
                             <h4>Writer & UX Engineer</h4>
                         </div>
+                        
                         {/* <div id="profile-section">
                             <h5>
                             I'm an artist and technologist who is constantly striving to
@@ -125,7 +148,12 @@ class Landing extends Component {
                             <button id="profile-section-next" onClick={this.scrollToWork}><i className="fas fa-chevron-down"></i></button>
                         </div> */}
                     </div>
-                </div>
+                    <div class="icon-bar"> 
+                        <a href="#" id="apps-tab" onClick={this.showApps}>Apps</a> 
+                        <a href="#" id="writing-tab" onClick={this.showWriting}>Writing</a>
+                        <a href="#" id="av-tab" onClick={this.showAV}>AV</a> 
+                    </div>
+                {/* </div> */}
                 <div id="section2-break" className="section-break"></div>
                 <Apps />
                 <Writing />
