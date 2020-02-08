@@ -2,6 +2,7 @@
 
     p {
         margin: 0;
+        text-decoration: none;
     }
 
     #profile-section {
@@ -82,6 +83,54 @@
         padding-left: 0;
         list-style: none;
         font-size: 1.6em;
+    }
+
+    .project-container {
+        position: relative;
+        /* top: 10em; */
+    }
+
+    #apps-container {
+        /* height: 90em; */
+    }
+
+    #writing-container {
+        /* height: 90em; */
+    }
+    
+    #av-container {
+    }
+    
+    .apps-list {
+        position: relative;
+        top: -2.2em;
+        margin: 0 auto;
+        list-style: none;
+        padding-left: 0;
+        width: 90%;
+    }
+
+    .project-card {
+        margin-bottom: 3em;
+    }
+
+    .project-card-title {
+        position: relative;
+        top: .8em;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .project-image {
+        width: 100%;
+    }
+    
+    .project-card-heading {
+        position: relative;
+        top: -0.3em;
+        background-color: black;
+        height: 3em;
+        text-align: center;
     }
 
 }

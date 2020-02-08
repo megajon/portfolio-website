@@ -143,7 +143,80 @@ class Landing extends Component {
                             <li><p onclick="showAV();">AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
                         </ul>
                     </div>
+                    <div id="apps-container" class="project-container">
+                        <ul class="apps-list">
+                            <li>
+                                <a href="#">
+                                <div class="project-card">
+                                    <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/markus-spiske-3Tf1J8q9bBA-unsplash.jpg" />
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="writing-container" class="project-container">
+                        <ul class="apps-list">
+                            <li>
+                                <a href="#">
+                                <div class="project-card">
+                                    <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" />
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="project-card">
+                                    <a href="#">
+                                        <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
+                                    </a>
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="av-container" class="project-container">
+                        <ul class="apps-list">
+                            <li>
+                                <a href="#">
+                                <div class="project-card">
+                                    <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man-large.jpg" />
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="project-card">
+                                    <a href="#">
+                                        <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/lighting-test.png" />
+                                    </a>
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="project-card">
+                                    <a href="#">
+                                        <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.png" />
+                                    </a>
+                                    <div class="project-card-heading">
+                                        <p class="project-card-title">Project Title</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                
                 {/* <div id="invisible-header"></div>
                 <div id="main-navbar">
                     <ul>
