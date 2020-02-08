@@ -116,7 +116,26 @@ class Landing extends Component {
 
         return (
             <>
-                <div id="invisible-header"></div>
+                <div id="profile-section" class="section">
+                    <div id="profile-image-container">
+                        <img id="profile-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/photo_50.jpg" />
+                    </div>
+                    <div id="profile-title-container">
+                        <p>Jonathan C. Seubert</p>
+                        <p>Writer   &   UX Engineer</p>
+                    </div>
+                    <div id="social-media-containter">
+                        <ul id="social-media-icons">
+                            <li><a href="https://www.linkedin.com/in/jonathan-seubert"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-linkedin-4-240.png" /></a></li>
+                            <li><a href="https://github.com/megajon"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-github-1.svg" /></a></li>
+                            <li><a href="https://twitter.com/seubert_c"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-twitter-4.svg" /></a></li>
+                            <li><a href="https://www.facebook.com/jonathan.seubert"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-facebook-4.svg" /></a></li>
+                            <li><a href="mailto:jonathan.seubert@megajon.com"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-email-10.svg" /></a></li>
+                            <li><a href="https://seubsworld-assets.s3.amazonaws.com/assets/JonathanSeubert_Resume.pdf" ><div id="cv-link"><div id="cv-link-text">CV</div></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+                {/* <div id="invisible-header"></div>
                 <div id="main-navbar">
                     <ul>
                         <li><button id="profile-button" onClick={this.scrollToProfile}><i className="fas fa-user icon" ></i></button></li>
@@ -127,15 +146,9 @@ class Landing extends Component {
                 <div id="first">
                     <h1 id="first-section"></h1>
                 </div>
-                {/* <div id="green" className="section"> */}
-                    <div id="title-section">
-                        <div id="title" className="title">
-                            <img id="profile-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/photo_50.jpg" />
-                            <h4>Jonathan C. Seubert</h4>
-                            <h4>Writer & UX Engineer</h4>
-                        </div>
+                <div id="green" className="section">
                         
-                        {/* <div id="profile-section">
+                        <div id="profile-section">
                             <h5>
                             I'm an artist and technologist who is constantly striving to
                             perfect my craft as a writer of screenplays as well as software
@@ -146,7 +159,7 @@ class Landing extends Component {
                         </div>
                         <div id="apps-next" className="next-icon">
                             <button id="profile-section-next" onClick={this.scrollToWork}><i className="fas fa-chevron-down"></i></button>
-                        </div> */}
+                        </div>
                     </div>
                     <div class="icon-bar"> 
                         <a href="#" id="apps-tab" onClick={this.showApps}>Apps</a> 
@@ -154,12 +167,12 @@ class Landing extends Component {
                         <a href="#" id="av-tab" onClick={this.showAV}>AV</a> 
                     </div>
                 {/* </div> */}
-                <div id="section2-break" className="section-break"></div>
+                {/* <div id="section2-break" className="section-break"></div>
                 <Apps />
                 <Writing />
                 <SoundVideo />
                 <div id="section4-break" className="section-break"></div>
-                <InfoSection />
+                <InfoSection /> */}
             </>
         )
     }
