@@ -13,10 +13,7 @@ class Landing extends Component {
             slideIndex: 1
         }
         this.scrollToProfile = this.scrollToProfile.bind(this);
-        // this.scrollToWork = this.scrollToWork.bind(this);
-        // this.scrollToInfo = this.scrollToInfo.bind(this);
-        // this.slideForward = this.slideForward.bind(this);
-        // this.slideBackward = this.slideBackward.bind(this);
+        this.scrollToApps = this.scrollToApps.bind(this);
         this.showApps = this.showApps.bind(this);
         this.showWriting = this.showWriting.bind(this);
         this.showAV = this.showAV.bind(this);
@@ -32,18 +29,14 @@ class Landing extends Component {
 
     scrollToProfile = (e) => {
         e.preventDefault();
-        document.querySelector('#first').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#profile-section').scrollIntoView({ behavior: 'smooth' });
     }
 
-    // scrollToWork = (e) => {
-    //     e.preventDefault();
-    //     document.querySelector('#section2-break').scrollIntoView({ behavior: 'smooth' });
-    // }
-
-    // scrollToInfo = (e) => {
-    //     e.preventDefault();
-    //     document.querySelector('#section4-break').scrollIntoView({ behavior: 'smooth' });
-    // }
+    scrollToApps = (e) => {
+        e.preventDefault();
+        document.querySelector('#projects-section').scrollIntoView({ behavior: 'smooth' });
+        console.log("scroll clicked")
+    }
 
     showApps = (e) => {
         e.preventDefault();
@@ -51,6 +44,7 @@ class Landing extends Component {
         document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
         document.querySelector("div#apps-container").style.display = "block";
         document.querySelector("#apps-hr").style.display = "block";
+        document.querySelector('#scrollTo').scrollIntoView({ behavior: 'smooth' });
     }
     
     showWriting = (e) => {
@@ -59,6 +53,7 @@ class Landing extends Component {
         document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
         document.querySelector("div#writing-container").style.display = "block";
         document.querySelector("#writing-hr").style.display = "block";
+        document.querySelector('#scrollTo').scrollIntoView({ behavior: 'smooth' });
     }
     
     showAV = (e) => {
@@ -67,48 +62,8 @@ class Landing extends Component {
         document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
         document.querySelector("div#av-container").style.display = "block";
         document.querySelector("#av-hr").style.display = "block";
-        console.log("clicked")
+        document.querySelector('#scrollTo').scrollIntoView({ behavior: 'smooth' });
     }
-
-    // currentSlide(n) {
-    //     showSlides(slideIndex = n);
-    // }
-
-    showSlides = async (n) =>  {
-        
-        let i;
-        let slides = await document.getElementsByClassName("app-panel");
-        // console.log(slides.length);
-        // let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {await this.setState({slideIndex: 1})}
-        if (n < 1) {this.setState({slideIndex: slides.length})}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        // for (i = 0; i < dots.length; i++) {
-        //     dots[i].className = dots[i].className.replace(" active", "none");
-        // }
-
-        slides[this.state.slideIndex - 1].style.display = "block";
-    }
-
-    slideForward = (e, n = 1) => {
-        e.preventDefault()
-        console.log("slide forward");
-        this.showSlides(this.state.slideIndex += n);
-    }
-
-    slideBackward = (e, n = -1) => {
-        e.preventDefault()
-        console.log("slide backward");
-        console.log("From plusSlides - n: " + n);
-        this.showSlides(this.state.slideIndex += n);
-    }
-
-
-
-    
-    // showSlides(slideIndex);
 
     render() {
 
@@ -133,6 +88,7 @@ class Landing extends Component {
                         </ul>
                     </div>
                 </div>
+                <div id="scrollTo"></div>
                 <div id="projects-section" class="section">
                     <div id="project-tabs-container">
                         <ul>
