@@ -135,6 +135,15 @@ class Landing extends Component {
                         </ul>
                     </div>
                 </div>
+                <div id="projects-section" class="section">
+                    <div id="project-tabs-container">
+                        <ul>
+                            <li><p onclick="showApps();">Apps</p><hr id="apps-hr" class="tabs-underline"></hr></li>
+                            <li><p onclick="showWriting();">Writing</p><hr id="writing-hr" class="tabs-underline"></hr></li>
+                            <li><p onclick="showAV();">AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
+                        </ul>
+                    </div>
+                </div>
                 {/* <div id="invisible-header"></div>
                 <div id="main-navbar">
                     <ul>
