@@ -13,30 +13,21 @@ class Landing extends Component {
             slideIndex: 1
         }
         this.scrollToProfile = this.scrollToProfile.bind(this);
-        this.scrollToWork = this.scrollToWork.bind(this);
-        this.scrollToInfo = this.scrollToInfo.bind(this);
-        this.slideForward = this.slideForward.bind(this);
-        this.slideBackward = this.slideBackward.bind(this);
+        // this.scrollToWork = this.scrollToWork.bind(this);
+        // this.scrollToInfo = this.scrollToInfo.bind(this);
+        // this.slideForward = this.slideForward.bind(this);
+        // this.slideBackward = this.slideBackward.bind(this);
         this.showApps = this.showApps.bind(this);
         this.showWriting = this.showWriting.bind(this);
         this.showAV = this.showAV.bind(this);
 
     }
 
-    // componentWillMount() {
-    //     const renderSlides = async () => {
-    //         let slides = await document.getElementsByClassName("app-panel");
-    //         for (let i = 0; i < slides.length; i++) {
-    //             slides[i].style.display = "none";
-    //         }
-    //         slides[0].style.display = "block";
-    //         slides[this.state.slideIndex].style.background = "silver";
-    //     }
-    //     renderSlides();
-    // }
-
     componentDidMount() {
-        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none")
+        document.querySelectorAll("div.project-container").forEach(section => section.style.display = "none");
+        document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
+        document.querySelector("#apps-hr").style.display = "block";
+        document.querySelector("div#apps-container").style.display = "block";
     }
 
     scrollToProfile = (e) => {
@@ -44,32 +35,39 @@ class Landing extends Component {
         document.querySelector('#first').scrollIntoView({ behavior: 'smooth' });
     }
 
-    scrollToWork = (e) => {
-        e.preventDefault();
-        document.querySelector('#section2-break').scrollIntoView({ behavior: 'smooth' });
-    }
+    // scrollToWork = (e) => {
+    //     e.preventDefault();
+    //     document.querySelector('#section2-break').scrollIntoView({ behavior: 'smooth' });
+    // }
 
-    scrollToInfo = (e) => {
-        e.preventDefault();
-        document.querySelector('#section4-break').scrollIntoView({ behavior: 'smooth' });
-    }
+    // scrollToInfo = (e) => {
+    //     e.preventDefault();
+    //     document.querySelector('#section4-break').scrollIntoView({ behavior: 'smooth' });
+    // }
 
     showApps = (e) => {
         e.preventDefault();
-        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
-        document.querySelector("div#apps").style.display = "block";
+        document.querySelectorAll("div.project-container").forEach(section => section.style.display = "none");
+        document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
+        document.querySelector("div#apps-container").style.display = "block";
+        document.querySelector("#apps-hr").style.display = "block";
     }
     
     showWriting = (e) => {
         e.preventDefault();
-        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
-        document.querySelector("div#writing").style.display = "block";
+        document.querySelectorAll("div.project-container").forEach(section => section.style.display = "none");
+        document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
+        document.querySelector("div#writing-container").style.display = "block";
+        document.querySelector("#writing-hr").style.display = "block";
     }
     
     showAV = (e) => {
         e.preventDefault();
-        document.querySelectorAll("div.project-links").forEach(link => link.style.display = "none");
-        document.querySelector("div#av").style.display = "block";
+        document.querySelectorAll("div.project-container").forEach(section => section.style.display = "none");
+        document.querySelectorAll('.tabs-underline').forEach(tab => tab.style.display = "none");
+        document.querySelector("div#av-container").style.display = "block";
+        document.querySelector("#av-hr").style.display = "block";
+        console.log("clicked")
     }
 
     // currentSlide(n) {
@@ -138,9 +136,9 @@ class Landing extends Component {
                 <div id="projects-section" class="section">
                     <div id="project-tabs-container">
                         <ul>
-                            <li><p onclick="showApps();">Apps</p><hr id="apps-hr" class="tabs-underline"></hr></li>
-                            <li><p onclick="showWriting();">Writing</p><hr id="writing-hr" class="tabs-underline"></hr></li>
-                            <li><p onclick="showAV();">AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
+                            <li><p onClick={this.showApps}>Apps</p><hr id="apps-hr" class="tabs-underline"></hr></li>
+                            <li><p onClick={this.showWriting}>Writing</p><hr id="writing-hr" class="tabs-underline"></hr></li>
+                            <li><p onClick={this.showAV}>AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
                         </ul>
                     </div>
                     <div id="apps-container" class="project-container">
