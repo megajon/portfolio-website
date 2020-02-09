@@ -229,7 +229,7 @@
     .back-button {
         position: relative;
         top: -0.2em;
-        right: 2.2em;
+        right: 1.5em;
     }
 
     .back-button-style {
@@ -246,7 +246,7 @@
     .info-icon {
         position: relative;
         top: -0.6em;
-        left: 2em;
+        left: 1.5em;
     }
 
     .info-icon-style {
