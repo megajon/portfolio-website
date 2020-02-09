@@ -27,13 +27,13 @@ class StockTwitsHeader extends Component {
     render() {
         return (
             <>
-            <div className="page-header">
-                <ul className="header-items">
-                    <li className="header-back-button" id="stocktwits-header-button"><a href="/"><i class="fa fa-arrow-left"></i></a></li>
-                    <li><p className="header-title">Search StockTwits</p></li>
-                    <li className="question-modal"><button id="stocktwits-question" className="modal-button" onClick={this.showModal}>?</button></li>
-                </ul>
-            </div>
+                <div className="page-header">
+                    <ul className="header-items">
+                        <li className="back-button"><a href="/"><img className="back-button-style" src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-arrow-72-240.png" /></a></li>
+                        <li className="header-title"><p>Search StockTwits</p></li>
+                        <li className="info-icon"><img className="info-icon-style" src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-info-5-240.png" onClick={this.showModal} /></li>
+                    </ul>
+                </div>
             </>
         )
     }
