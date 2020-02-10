@@ -87,9 +87,10 @@ class Landing extends Component {
                             <li><a href="mailto:jonathan.seubert@megajon.com"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-email-10.svg" /></a></li>
                             <li><a href="https://seubsworld-assets.s3.amazonaws.com/assets/JonathanSeubert_Resume.pdf" ><div id="cv-link"><div id="cv-link-text">CV</div></div></a></li>
                         </ul>
+                        <div id="scrollTo"></div>
                     {/* </div> */}
                 </div>
-                <div id="scrollTo"></div>
+                
                 <div id="projects-section" class="section">
                     <div id="project-tabs-container">
                         <ul>
@@ -98,9 +99,11 @@ class Landing extends Component {
                             <li><p onClick={this.showAV}>AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
                         </ul>
                     </div>
-                    <Apps />
-                    <Writing />
-                    <SoundVideo />
+                    <div id="projects-container">
+                        <Apps />
+                        <Writing />
+                        <SoundVideo />
+                    </div>
                 </div>
                 <NavBar />
                 {/* <div id="navbar">
