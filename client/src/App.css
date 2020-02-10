@@ -321,6 +321,34 @@
         color: red;
     }
 
+    .dropdown-content {
+        position: relative;
+        top: 0.6em;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .dropdown-content li {
+        list-style-type: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropdown-content li p.user {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        font-weight: bold;
+        overflow-wrap: break-word;
+    }
+
+    .dropdown-content li p.post {
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
 
 
     /* .header-back-button {
