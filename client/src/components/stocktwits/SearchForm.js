@@ -43,7 +43,7 @@ class SearchForm extends Component {
             <div className="search-form">
                 <form id="stocktwits-search-form" onSubmit={this.onSubmit}>
                     <input type="text" id="stocktwits-search-field" name="searchQuery" onChange={this.onChange} value={this.state.searchQuery} />
-                    <button type="submit" id="stocktwits-search-button"><i class="fas fa-search"></i></button>
+                    <img id="stocktwits-search-button" src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-magnifier-2-240.png" />
                 </form>
             </div>
         </div>

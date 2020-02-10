@@ -73,7 +73,7 @@ class TwitsList extends Component {
         ));
         return (
             <>
-            <div className="test-class">
+            <div className="list-section">
                 {symbolList}
             </div>
             </>
