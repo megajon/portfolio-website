@@ -253,7 +253,6 @@ body {
     bottom: 0.5em;
     left: 7em;
     width: 100%;
-    
   }
 
   
@@ -1337,10 +1336,6 @@ body {
     }
     
     .show {display:block;}
-  
-    #linkedin i {
-      color: #3b5998;
-    }
 
 }
 

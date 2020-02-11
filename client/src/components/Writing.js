@@ -11,7 +11,7 @@ class Writing extends Component {
                 <div id="writing-container" class="project-container">
                         <ul class="apps-list">
                             <li>
-                                <a href="/john-brown">
+                                <a href="/johnbrown">
                                 <div class="project-card">
                                     <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" />
                                     <div class="project-card-heading">

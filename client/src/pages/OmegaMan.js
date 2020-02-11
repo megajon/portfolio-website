@@ -7,7 +7,7 @@ class OmegaMan extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <BackButton />
+                        <BackButton class="project-back" href="/" />
                     </ul>
                 </div>
                 <div className="page-title">

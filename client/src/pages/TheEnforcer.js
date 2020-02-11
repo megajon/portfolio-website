@@ -8,7 +8,7 @@ class TheEnforcer extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <BackButton url="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" />
+                        <BackButton class="project-back-pdf" href="/" url="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" />
                         <DownloadPDF url="https://seubsworld-assets.s3.amazonaws.com/assets/enforcer.pdf" />
                     </ul>
                 </div>

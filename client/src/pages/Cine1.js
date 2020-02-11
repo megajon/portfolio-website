@@ -7,14 +7,14 @@ class Cine1 extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <BackButton />
+                        <BackButton href="/" class="project-back" />
                     </ul>
                 </div>
                 <div className="page-title">
                     <h2>Cinematography Footage</h2>
                 </div>
-                <div id="cine1-video">
-                    <video src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.mp4" controls />
+                <div className="project-image-div">
+                    <video className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.mp4" controls />
                 </div>
                 <div className="page-content">
                     <p>

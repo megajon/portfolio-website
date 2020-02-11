@@ -7,14 +7,14 @@ class LightingTest extends Component {
             <>
                 <div className="page-header">
                     <ul className="header-items">
-                        <BackButton />
+                        <BackButton class="project-back" href="/" />
                     </ul>
                 </div>
                 <div className="page-title">
                     <h2>Lighting Test</h2>
                 </div>
-                <div id="cine1-video">
-                    <video src="https://seubsworld-assets.s3.amazonaws.com/assets/final.mp4" controls />
+                <div className="project-image-div">
+                    <video className="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/final.mp4" controls />
                 </div>
                 <div className="page-content">
                     <p>
