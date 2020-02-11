@@ -1,4 +1,14 @@
 @media screen and (max-width: 700px) {
+    body {
+        /* width: 100%; */
+    }
+
+    .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
 
     p {
         margin: 0;
@@ -547,5 +557,177 @@
         width: 10em;
         height: 10em;
     }
+
+    /* stocktwits page */
+
+    #stocktwits-modal {
+        display: none;
+        top: 7em;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: black;
+        overflow: auto;
+        /* text-align: center; */
+        opacity: 0.9;
+        filter: alpha(opacity=50);
+    }
+
+    #stocktwits-modal p {
+        position: relative;
+        width: 86%;
+        top: 3em;
+        left: 1em;
+        text-align: justify;
+        line-height: 2em;
+        color: white;
+    }
+
+    .close {
+        color: red;
+        float: right;
+        margin-right: 0.5em;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .page-header {
+        position: relative;
+        margin: 0 auto;
+        width: 75%;
+        height: 3em;
+        background-color: black;
+        text-align: center;
+        color: white;
+    }
+
+    .header-items {
+        position: relative;
+        top: 0.7em;
+    }
+
+    .header-items li {
+        display: inline-block;
+    }
+
+    .back-button {
+        position: relative;
+        top: -0.2em;
+        right: 1.3em;
+    }
+
+    .back-button-style {
+        width: 2em;
+        height: 2em;
+    }
+
+    .header-title {
+        position: relative;
+        top: -0.6em;
+        font-size: 1.4em;
+    }
+
+    .info-icon {
+        position: relative;
+        top: -0.6em;
+        left: 1.2em;
+    }
+
+    .info-icon-style {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .search-box {
+        position: relative;
+        top: 1em;
+        margin: 0 auto;
+        width: 75%;
+        height: 2.2em;
+        border: 0.09em solid black;
+        border-radius: 40px;
+    }
+
+    .search-form {
+        position: relative;
+        top: 0.4em;
+        left: 0.5em;
+        margin: 0 auto;
+    }
+
+    #stocktwits-search-field {
+        border: none;
+    }
+
+    #stocktwits-search-button {
+        position: relative;
+        top: 0.16em;
+        left: 1em;
+        width: 1em;
+        height: 1em;
+    }
+
+    .list-section {
+        position: relative;
+        top: 2em;
+        text-align: center;
+    }
+
+    .dropdown {
+        width: 86%;
+        margin: 0em auto;
+    }
+
+
+
+    .hidden-content {
+        display: none;
+    }
+
+    .twit-button {
+        width: 88%;
+        height: 3em;
+        border-radius: 40px;
+        background-color: gray;
+        margin-bottom: 0.4em;
+    }
+
+    .delete-button {
+        float: right;
+        background-color: transparent;
+        font-size: 1em;
+        border: none;
+        color: red;
+    }
+
+    .dropdown-content {
+        position: relative;
+        top: 0.6em;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+
+    .dropdown-content li {
+        list-style-type: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropdown-content li p.user {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0.5em;
+        text-align: left;
+        font-weight: bold;
+        overflow-wrap: break-word;
+    }
+
+    .dropdown-content li p.post {
+        text-align: justify;
+        overflow-wrap: break-word;
+    }
+
 
 }

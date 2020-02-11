@@ -38,7 +38,6 @@ class Modal extends Component {
                             body of the application that displays 30 of the most recent twits when pressed. 
                             Every ten minutes the application will update any symbols in the list with the
                             latest posts from Stocktwits.com users.
-
                         </p>
                     </div>
                 </div>
