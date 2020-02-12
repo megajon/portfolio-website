@@ -535,6 +535,11 @@
         font-size: 1.6em;
     }
 
+    .tab-link {
+        text-decoration: none;
+        color: black;
+    }
+
     hr {
         color: red;
     }

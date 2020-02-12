@@ -78,9 +78,9 @@ class Landing extends Component {
                 <div id="projects-section" class="section">
                     <div id="project-tabs-container">
                         <ul>
-                            <li><p onClick={this.showApps}>Apps</p><hr id="apps-hr" class="tabs-underline"></hr></li>
-                            <li><p onClick={this.showWriting}>Writing</p><hr id="writing-hr" class="tabs-underline"></hr></li>
-                            <li><p onClick={this.showAV}>AV</p><hr id="av-hr" class="tabs-underline"></hr></li>
+                            <li><a class="tab-link" href="#" onClick={this.showApps}>Apps</a><hr id="apps-hr" class="tabs-underline"></hr></li>
+                            <li><a class="tab-link" href="#" onClick={this.showWriting}>Writing</a><hr id="writing-hr" class="tabs-underline"></hr></li>
+                            <li><a class="tab-link" href="#" onClick={this.showAV}>AV</a><hr id="av-hr" class="tabs-underline"></hr></li>
                         </ul>
                     </div>
                     <div id="projects-container">
