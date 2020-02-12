@@ -18,7 +18,7 @@ class Apps extends Component {
                                 <div class="project-card">
                                     <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/markus-spiske-3Tf1J8q9bBA-unsplash.jpg" />
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">Project Title</p>
+                                        <p class="project-card-title">Search Stocktwits</p>
                                     </div>
                                 </div>
                                 </a>

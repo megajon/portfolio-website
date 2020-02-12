@@ -15,7 +15,7 @@ class Writing extends Component {
                                 <div class="project-card">
                                     <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/main_middle.jpg" />
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">Project Title</p>
+                                        <p class="project-card-title">John Brown: A Biopic Screenplay</p>
                                     </div>
                                 </div>
                                 </a>
@@ -25,7 +25,7 @@ class Writing extends Component {
                                     <div class="project-card">
                                         <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/parking-meters.jpg" />
                                         <div class="project-card-heading">
-                                            <p class="project-card-title">Project Title</p>
+                                            <p class="project-card-title">The Enforcer: A Short Screenplay</p>
                                         </div>
                                     </div>
                                 </a>

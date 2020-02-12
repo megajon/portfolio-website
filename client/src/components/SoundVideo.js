@@ -18,7 +18,7 @@ class SoundVideo extends Component {
                                 <div class="project-card">
                                     <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man-large.jpg" />
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">Project Title</p>
+                                        <p class="project-card-title">The Omega Man: A Sound Experience</p>
                                     </div>
                                 </div>
                                 </a>
@@ -29,7 +29,7 @@ class SoundVideo extends Component {
                                         <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/lighting-test.png" />
                                     </a>
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">Project Title</p>
+                                        <p class="project-card-title">Lighting Test</p>
                                     </div>
                                 </div>
                             </li>
@@ -39,7 +39,7 @@ class SoundVideo extends Component {
                                         <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/cine1-broll.png" />
                                     </a>
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">Project Title</p>
+                                        <p class="project-card-title">Cinematography Footage</p>
                                     </div>
                                 </div>
                             </li>

@@ -13,12 +13,9 @@ class Landing extends Component {
         this.state = {
             slideIndex: 1
         }
-        // this.scrollToProfile = this.scrollToProfile.bind(this);
-        // this.scrollToApps = this.scrollToApps.bind(this);
         this.showApps = this.showApps.bind(this);
         this.showWriting = this.showWriting.bind(this);
         this.showAV = this.showAV.bind(this);
-
     }
 
     componentDidMount() {
@@ -27,17 +24,6 @@ class Landing extends Component {
         document.querySelector("#apps-hr").style.display = "block";
         document.querySelector("div#apps-container").style.display = "block";
     }
-
-    // scrollToProfile = (e) => {
-    //     e.preventDefault();
-    //     document.querySelector('#profile-section').scrollIntoView({ behavior: 'smooth' });
-    // }
-
-    // scrollToApps = (e) => {
-    //     e.preventDefault();
-    //     document.querySelector('#projects-section').scrollIntoView({ behavior: 'smooth' });
-    //     console.log("scroll clicked")
-    // }
 
     showApps = (e) => {
         e.preventDefault();
@@ -78,7 +64,6 @@ class Landing extends Component {
                         <p>Jonathan C. Seubert</p>
                         <p>Writer   &   UX Engineer</p>
                     </div>
-                    {/* <div id="social-media-containter"> */}
                         <ul id="social-media-icons">
                             <li><a href="https://www.linkedin.com/in/jonathan-seubert"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-linkedin-4-240.png" /></a></li>
                             <li><a href="https://github.com/megajon"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-github-1.svg" /></a></li>
@@ -88,7 +73,6 @@ class Landing extends Component {
                             <li><a href="https://seubsworld-assets.s3.amazonaws.com/assets/JonathanSeubert_Resume.pdf" ><div id="cv-link"><div id="cv-link-text">CV</div></div></a></li>
                         </ul>
                         <div id="scrollTo"></div>
-                    {/* </div> */}
                 </div>
                 
                 <div id="projects-section" class="section">
@@ -105,51 +89,7 @@ class Landing extends Component {
                         <SoundVideo />
                     </div>
                 </div>
-                <NavBar />
-                {/* <div id="navbar">
-                    <ul>
-                        <li><button onclick="document.querySelector('#profile-section').scrollIntoView({ behavior: 'smooth' });"><img src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-user-1-240.png" /></button></li>
-                        <li><button onclick="document.querySelector('#projects-section').scrollIntoView({ behavior: 'smooth' });"><img id="profile-icon" src="https://seubsworld-assets.s3.amazonaws.com/assets/iconmonstr-briefcase-3-240.png" /></button></li>
-                    </ul>
-                </div> */}
-                {/* <div id="invisible-header"></div>
-                <div id="main-navbar">
-                    <ul>
-                        <li><button id="profile-button" onClick={this.scrollToProfile}><i className="fas fa-user icon" ></i></button></li>
-                        <li><button id="work-button" onClick={this.scrollToWork}><i className="fas fa-briefcase  icon"></i></button></li>
-                        <li><button id="info-button" onClick={this.scrollToInfo}><i className="fas fa-info-circle fa-10x icon"></i></button></li>
-                    </ul>
-                </div>
-                <div id="first">
-                    <h1 id="first-section"></h1>
-                </div>
-                <div id="green" className="section">
-                        
-                        <div id="profile-section">
-                            <h5>
-                            I'm an artist and technologist who is constantly striving to
-                            perfect my craft as a writer of screenplays as well as software
-                            programs. I'm constantly endeavouring to use my artistic and
-                            technological skills to develop projects that are thought provoking
-                            and enrich people's lives.
-                            </h5>
-                        </div>
-                        <div id="apps-next" className="next-icon">
-                            <button id="profile-section-next" onClick={this.scrollToWork}><i className="fas fa-chevron-down"></i></button>
-                        </div>
-                    </div>
-                    <div class="icon-bar"> 
-                        <a href="#" id="apps-tab" onClick={this.showApps}>Apps</a> 
-                        <a href="#" id="writing-tab" onClick={this.showWriting}>Writing</a>
-                        <a href="#" id="av-tab" onClick={this.showAV}>AV</a> 
-                    </div>
-                {/* </div> */}
-                {/* <div id="section2-break" className="section-break"></div>
-                <Apps />
-                <Writing />
-                <SoundVideo />
-                <div id="section4-break" className="section-break"></div>
-                <InfoSection /> */}
+                {/* <NavBar /> */}
             </>
         )
     }
