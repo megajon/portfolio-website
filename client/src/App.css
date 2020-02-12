@@ -622,15 +622,17 @@
     /* stocktwits page */
 
     #stocktwits-modal {
+        max-width: 35%;
         display: none;
-        top: 7em;
+        top: 4em;
+        left: 39em;
         position: fixed;
-        width: 100%;
+        width: 35%;
         height: 100%;
         z-index: 1;
         background-color: black;
         overflow: auto;
-        /* text-align: center; */
+        text-align: center;
         opacity: 0.9;
         filter: alpha(opacity=50);
     }
@@ -675,7 +677,7 @@
     .back-button {
         position: relative;
         top: -0.2em;
-        right: 1.3em;
+        right: 14.5em;
     }
 
     .back-button-style {
@@ -686,13 +688,14 @@
     .header-title {
         position: relative;
         top: -0.6em;
+        right: 1.5em;
         font-size: 1.4em;
     }
 
     .info-icon {
         position: relative;
         top: -0.6em;
-        left: 1.2em;
+        left: 12em;
     }
 
     .info-icon-style {
@@ -704,7 +707,7 @@
         position: relative;
         top: 1em;
         margin: 0 auto;
-        width: 75%;
+        width: 50%;
         height: 2.2em;
         border: 0.09em solid black;
         border-radius: 40px;
@@ -712,19 +715,21 @@
 
     .search-form {
         position: relative;
+        /* width: 10em; */
         top: 0.4em;
         left: 0.5em;
         margin: 0 auto;
     }
 
     #stocktwits-search-field {
+        width: 30em;
         border: none;
     }
 
     #stocktwits-search-button {
         position: relative;
         top: 0.16em;
-        left: 1em;
+        left: 0.8em;
         width: 1em;
         height: 1em;
     }
@@ -747,7 +752,7 @@
     }
 
     .twit-button {
-        width: 88%;
+        width: 50%;
         height: 3em;
         border-radius: 40px;
         background-color: gray;
@@ -765,7 +770,7 @@
     .dropdown-content {
         position: relative;
         top: 0.6em;
-        width: 80%;
+        width: 50%;
         margin: 0 auto;
         margin-bottom: 1em;
     }
@@ -788,6 +793,65 @@
     .dropdown-content li p.post {
         text-align: justify;
         overflow-wrap: break-word;
+    }
+
+    .project-back {
+        position: relative;
+        top: -0.2em;
+        float: left;
+        right: 2em;
+        /* margin-left: 1em; */
+    }
+
+    .project-back-pdf {
+        position: relative;
+        top: -0.2em;
+        right: 17.5em;
+    }
+
+    .download-button {
+        position: relative;
+        bottom: 0.9em;
+        left: 15em;
+        background-color: white;
+        color: black;
+        padding: 0.2em;
+        border-radius: 4%;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    /* project content */
+
+    .page-title {
+        margin: 1em 0;
+    }
+
+    .page-title h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .project-image-div {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%;
+        /* margin: auto; */
+    }
+
+    .page-content {
+        width: 50%;
+        text-align: justify;
+        margin: 0 auto 5em auto;
+    }
+
+    .page-content p {
+        margin-top: 1em;
+        line-height: 2;
     }
 
 

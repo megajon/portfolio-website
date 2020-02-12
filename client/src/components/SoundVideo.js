@@ -18,7 +18,7 @@ class SoundVideo extends Component {
                                 <div class="project-card">
                                     <img class="project-image" src="https://seubsworld-assets.s3.amazonaws.com/assets/omega-man-large.jpg" />
                                     <div class="project-card-heading">
-                                        <p class="project-card-title">The Omega Man: A Sound Experience</p>
+                                        <p class="project-card-title">The Omega Man</p>
                                     </div>
                                 </div>
                                 </a>
